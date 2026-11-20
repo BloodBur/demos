@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Цветелия — цветы с доставкой в Чебоксарах</title>
+<meta name="description" content="Цветелия: букеты и композиции в Чебоксарах. Два магазина, круглосуточная доставка курьером, предзаказ ко Дню матери 29 ноября.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#6e1423;--wine2:#8f1d30;--rose:#f3d9d6;--blush:#fbf1ee;--cream:#fffaf6;--ink:#2a1a1c;--mute:#7a6467;--line:#ecdcd8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,250,246,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:600;letter-spacing:.14em;color:var(--wine)}
+nav{display:flex;gap:26px;font-size:14px;font-weight:500}
+nav a{opacity:.8}nav a:hover{opacity:1;color:var(--wine)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:40px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0}
+.btn-w{background:var(--wine);color:#fff}.btn-w:hover{background:var(--wine2);transform:translateY(-2px);box-shadow:0 10px 24px rgba(110,20,35,.25)}
+.btn-o{border:1.5px solid var(--wine);color:var(--wine);background:transparent}.btn-o:hover{background:var(--wine);color:#fff}
+.hd .btn{padding:10px 18px;font-size:14px}
+/* hero */
+.hero{padding:56px 0 70px;position:relative}
+.hero-g{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.tag{display:inline-block;background:var(--rose);color:var(--wine);font-size:13px;font-weight:600;padding:7px 14px;border-radius:30px;margin-bottom:22px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(42px,6vw,76px);line-height:1.02;color:var(--wine);margin-bottom:22px}
+h1 i{font-weight:500;color:var(--ink)}
+.lead{font-size:18px;color:var(--mute);max-width:520px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.facts{display:flex;gap:30px;flex-wrap:wrap}
+.facts b{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--wine);line-height:1}
+.facts span{font-size:13px;color:var(--mute)}
+.hero-ph{position:relative}
+.hero-ph img{border-radius:220px 220px 24px 24px;aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 30px 60px rgba(110,20,35,.18)}
+.badge{position:absolute;left:-26px;bottom:40px;background:#fff;border-radius:18px;padding:16px 18px;box-shadow:0 14px 40px rgba(0,0,0,.12);max-width:230px;animation:float 5s ease-in-out infinite}
+.badge b{color:var(--wine);font-size:15px}.badge p{font-size:13px;color:var(--mute)}
+@keyframes float{50%{transform:translateY(-8px)}}
+.petal{position:absolute;width:14px;height:14px;background:var(--rose);border-radius:14px 0;opacity:.7;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{from{transform:translateY(-40px) rotate(0)}to{transform:translateY(720px) rotate(320deg);opacity:0}}
+/* preorder strip */
+.strip{background:var(--wine);color:#fff;padding:26px 0}
+.strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.strip h3{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600}
+.strip p{opacity:.85;font-size:15px}
+.strip .btn{background:#fff;color:var(--wine)}
+/* sections */
+section{padding:84px 0}
+.sh{text-align:center;margin-bottom:40px}
+.sh h2{font-family:"Cormorant Garamond",serif;font-size:clamp(34px,4.5vw,52px);color:var(--wine);font-weight:600;line-height:1.1;margin-bottom:10px}
+.sh p{color:var(--mute);max-width:600px;margin:0 auto}
+.tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.tab{padding:10px 18px;border-radius:30px;border:1.5px solid var(--line);background:#fff;font:600 14px Manrope,sans-serif;cursor:pointer;transition:.2s}
+.tab.on,.tab:hover{background:var(--wine);color:#fff;border-color:var(--wine)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(110,20,35,.12)}
+.card .ph{position:relative;cursor:zoom-in;overflow:hidden;background:var(--blush)}
+.card .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.04)}
+.zoom{position:absolute;right:12px;top:12px;background:rgba(255,255,255,.92);border-radius:20px;font-size:12px;font-weight:600;padding:5px 10px;color:var(--wine)}
+.card .bd{padding:16px 18px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.card h4{font-size:15px;font-weight:600}
+.card small{display:block;color:var(--mute);font-size:12.5px}
+.card .btn{padding:9px 15px;font-size:13px}
+.card.hide{display:none}
+.note{text-align:center;color:var(--mute);font-size:14px;margin-top:26px}
+/* how */
+.how{background:var(--blush)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:#fff;border-radius:20px;padding:28px}
+.step b{font-family:"Cormorant Garamond",serif;font-size:44px;color:var(--wine);line-height:1}
+.step h4{font-size:17px;margin:10px 0 6px}
+.step p{color:var(--mute);font-size:15px}
+/* shops */
+.shops{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.shop{border:1px solid var(--line);border-radius:20px;padding:28px;background:#fff}
+.shop h4{font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--wine);margin-bottom:6px}
+.stars{color:#e0a100;font-weight:700}
+.shop ul{list-style:none;margin-top:14px;display:grid;gap:8px;font-size:15px}
+.shop li::before{content:"— ";color:var(--wine)}
+.deliv{margin-top:22px;background:var(--wine);color:#fff;border-radius:20px;padding:26px 28px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.deliv h4{font-family:"Cormorant Garamond",serif;font-size:30px}
+.pay{display:flex;gap:8px;flex-wrap:wrap}
+.pay span{background:rgba(255,255,255,.14);padding:7px 12px;border-radius:20px;font-size:13px}
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px}
+.rev p{font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.35;font-style:italic}
+.rev span{display:block;margin-top:12px;color:var(--mute);font-size:13px}
+/* contacts */
+.ct{background:var(--ink);color:#fff;border-radius:28px;padding:48px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.ct h2{font-family:"Cormorant Garamond",serif;font-size:clamp(34px,4vw,50px);line-height:1.08}
+.ct p{opacity:.75;margin-top:10px}
+.links{display:grid;gap:10px}
+.links a{display:flex;justify-content:space-between;padding:15px 18px;border-radius:14px;background:rgba(255,255,255,.08);transition:.2s;font-weight:600}
+.links a:hover{background:rgba(255,255,255,.16)}
+footer{padding:30px 0 100px;text-align:center;color:var(--mute);font-size:13px}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(20,8,10,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:88vh;max-width:min(92vw,900px);border-radius:12px}
+.lb button{position:absolute;top:16px;right:20px;background:none;border:0;color:#fff;font-size:38px;cursor:pointer}
+/* mobile bar */
+.mbar{display:none}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:900px){
+ nav{display:none}
+ .hero-g,.ct{grid-template-columns:1fr}
+ .hero{padding:30px 0 50px}
+ .hero-ph{order:-1}
+ .badge{left:12px;bottom:16px}
+ .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+ .steps,.shops,.revs{grid-template-columns:1fr}
+ .card .bd{flex-direction:column;align-items:flex-start}
+ section{padding:60px 0}
+ .ct{padding:32px 24px}
+ .hd .btn{display:none}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:8px;padding:10px 12px;background:rgba(255,250,246,.96);border-top:1px solid var(--line)}
+ .mbar a{flex:1;justify-content:center;padding:12px}
+}
+@media(max-width:480px){.grid{grid-template-columns:1fr 1fr}.card h4{font-size:14px}.facts{gap:18px}}
+</style>
+</head>
+<body>
+<header><div class="wrap hd">
+ <a class="logo" href="#">ЦВЕТЕЛИЯ</a>
+ <nav><a href="#catalog">Каталог</a><a href="#how">Как заказать</a><a href="#shops">Магазины и доставка</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+ <a class="btn btn-w" href="https://t.me/cveteliya21" target="_blank">Заказать в Telegram</a>
+</div></header>
+
+<div class="hero"><div class="wrap hero-g">
+ <div>
+  <span class="tag">Предзаказ ко Дню матери, 29 ноября</span>
+  <h1>Цветы, которые <i>говорят за вас</i></h1>
+  <p class="lead">Букеты и композиции в Чебоксарах. Два магазина и круглосуточная доставка курьером до двери.</p>
+  <div class="cta">
+   <a class="btn btn-w" href="#catalog">Смотреть букеты</a>
+   <a class="btn btn-o" href="tel:+79530150015">8 953 015-00-15</a>
+  </div>
+  <div class="facts">
+   <div><b>4,9 ★</b><span>115 оценок в 2ГИС, Тракторостроителей</span></div>
+   <div><b>5,0 ★</b><span>67 оценок в 2ГИС, Ярмарочная</span></div>
+   <div><b>24/7</b><span>доставка курьером</span></div>
+  </div>
+ </div>
+ <div class="hero-ph" id="heroPh">
+  <img src="c16117-0.jpg" alt="Цветелия, День матери 29 ноября">
+  <div class="badge"><b>Предзаказ открыт</b><p>Оформите заказ заранее, чтобы букет был к празднику</p></div>
+ </div>
+</div></div>
+
+<div class="strip"><div class="wrap">
+ <div><h3>Предзаказ ко Дню матери, 29.11</h3><p>Подборки в красных и нежных оттенках. Выберите букет и напишите нам.</p></div>
+ <a class="btn" href="#catalog">Выбрать букет</a>
+</div></div>
+
+<section id="catalog"><div class="wrap">
+ <div class="sh rv"><h2>Каталог букетов</h2><p>Фото из нашего канала, цены указаны на фото. Нажмите на фото, чтобы рассмотреть.</p></div>
+ <div class="tabs rv">
+  <button class="tab on" data-f="all">Все</button>
+  <button class="tab" data-f="red">Красные оттенки</button>
+  <button class="tab" data-f="soft">Нежные оттенки</button>
+  <button class="tab" data-f="mix">Подборка</button>
+ </div>
+ <div class="grid" id="grid"></div>
+ <p class="note">Не нашли подходящий? Напишите, поможем подобрать.</p>
+</div></section>
+
+<section class="how" id="how"><div class="wrap">
+ <div class="sh rv"><h2>Как заказать</h2><p>Пара минут в переписке, дальше всё сделаем сами.</p></div>
+ <div class="steps">
+  <div class="step rv"><b>1</b><h4>Выберите букет</h4><p>В каталоге или пришлите свою идею и бюджет.</p></div>
+  <div class="step rv"><b>2</b><h4>Напишите нам</h4><p>В Telegram, ВКонтакте, Max или по телефону. Уточним адрес, время и записку.</p></div>
+  <div class="step rv"><b>3</b><h4>Получите цветы</h4><p>Заберите в магазине или ждите курьера: доставляем круглосуточно.</p></div>
+ </div>
+</div></section>
+
+<section id="shops"><div class="wrap">
+ <div class="sh rv"><h2>Магазины и доставка</h2></div>
+ <div class="shops">
+  <div class="shop rv"><h4>пр. Тракторостроителей, 72</h4><span class="stars">★ 4,9</span> <small>· 115 оценок в 2ГИС</small>
+   <ul><li>Работаем с 9:00 до 21:00</li><li>Самовывоз готовых букетов</li><li>Есть сухоцветы</li></ul></div>
+  <div class="shop rv"><h4>ул. Ярмарочная, 7к2</h4><span class="stars">★ 5,0</span> <small>· 67 оценок в 2ГИС</small>
+   <ul><li>Работаем с 9:00 до 21:00</li><li>Пункт выдачи заказов</li></ul></div>
+ </div>
+ <div class="deliv rv">
+  <div><h4>Доставка 24/7</h4><p style="opacity:.85">Круглосуточно, нашим курьером до двери, по Чувашии.</p></div>
+  <div class="pay"><span>Карта</span><span>Наличные</span><span>Перевод</span><span>QR-код</span></div>
+ </div>
+</div></section>
+
+<section id="reviews" style="background:var(--blush)"><div class="wrap">
+ <div class="sh rv"><h2>Что пишут о нас</h2><p>Отзывы покупателей из 2ГИС.</p></div>
+ <div class="revs">
+  <div class="rev rv"><p>«Заказывала не один раз, всегда привозили очень красивые букеты, а главное, что цветы были всегда свежие)»</p><span>Отзыв в 2ГИС</span></div>
+  <div class="rev rv"><p>«все очень быстро и качественно, цветы свежие, упаковка симпатичная, о доставке договорились буквально за пару минут)»</p><span>Отзыв в 2ГИС</span></div>
+  <div class="rev rv"><p>«Заказывала цветы на юбилей маме 🙌 как всегда качественный цветок,а запах какой 🙈 Долго простоял,что немаловажно»</p><span>Отзыв в 2ГИС</span></div>
+  <div class="rev rv"><p>«Спасибо большое за шикарный букет, отдельно можно поблагодарить сотрудников за отзывчивость! Магазин рекомендую!👍»</p><span>Отзыв в 2ГИС</span></div>
+ </div>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+ <div class="ct rv">
+  <div><h2>Закажите букет сейчас</h2><p>Ответим, поможем выбрать и привезём в удобное время.</p></div>
+  <div class="links">
+   <a href="https://t.me/cveteliya21" target="_blank">Telegram <span>@cveteliya21 →</span></a>
+   <a href="tel:+79530150015">Телефон <span>8 953 015-00-15 →</span></a>
+   <a href="https://vk.ru/cveteliya21" target="_blank">ВКонтакте <span>→</span></a>
+   <a href="https://t.me/cveteliyalife" target="_blank">Канал с новинками <span>→</span></a>
+  </div>
+ </div>
+</div></section>
+
+<footer>© Цветелия, Чебоксары. Демо-версия сайта.</footer>
+
+<div class="mbar"><a class="btn btn-o" href="tel:+79530150015">Позвонить</a><a class="btn btn-w" href="https://t.me/cveteliya21" target="_blank">Telegram</a></div>
+<div class="lb" id="lb"><button aria-label="Закрыть">×</button><img alt=""></div>
+<script>
+// Catalog data: images from the shop's own Telegram channel posts
+const items=[
+ ['c16117-1','red','Розы в белой упаковке','4 варианта, цены на фото'],
+ ['c16117-4','red','Кустовые розы','4 варианта, цены на фото'],
+ ['c16117-5','red','Розы в корзине и букетах','4 варианта, цены на фото'],
+ ['c16117-3','red','Композиция в корзине','Цену уточните в Telegram'],
+ ['c16117-6','red','Большой букет красных роз','Цену уточните в Telegram'],
+ ['c16125-0','soft','Белые хризантемы','4 варианта, цены на фото'],
+ ['c16125-1','soft','Ромашки','4 варианта, цены на фото'],
+ ['c16125-2','soft','Розовые хризантемы','4 варианта, цены на фото'],
+ ['c16125-3','soft','Альстромерии','4 варианта, цены на фото'],
+ ['c16125-4','soft','Персиковые розы','4 варианта, цены на фото'],
+ ['c16125-5','soft','Белые кустовые розы','4 варианта, цены на фото'],
+ ['c16125-6','soft','Гортензии','4 варианта, цены на фото'],
+ ['c16125-7','soft','Белые и кремовые розы','4 варианта, цены на фото'],
+ ['c16125-8','soft','Розовые розы','4 варианта, цены на фото'],
+ ['c16135-0','mix','Гортензии в голубых тонах','4 варианта, цены на фото'],
+ ['c16135-1','mix','Розы коралловых оттенков','4 варианта, цены на фото'],
+ ['c16135-2','mix','Подборка композиций','4 варианта, цены на фото'],
+ ['c16135-3','mix','Букет-сердце','Цену уточните в Telegram'],
+ ['c16135-4','mix','Белые розы','Цену уточните в Telegram'],
+ ['c16135-5','mix','Розовые хризантемы, дуэт','Цену уточните в Telegram']
+];
+const g=document.getElementById('grid');
+items.forEach(([f,c,t,s])=>{
+ const msg=encodeURIComponent('Здравствуйте! Хочу заказать: '+t);
+ g.insertAdjacentHTML('beforeend',`<div class="card rv" data-c="${c}"><div class="ph" data-src="${f}.jpg"><img loading="lazy" src="${f}.jpg" alt="${t}"><span class="zoom">Увеличить</span></div><div class="bd"><div><h4>${t}</h4><small>${s}</small></div><a class="btn btn-w" target="_blank" href="https://t.me/cveteliya21?text=${msg}">Заказать</a></div></div>`);
+});
+// Filter tabs
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===b));
+ document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',b.dataset.f!=='all'&&c.dataset.c!==b.dataset.f));
+});
+// Lightbox
+const lb=document.getElementById('lb');
+g.addEventListener('click',e=>{const p=e.target.closest('.ph');if(!p)return;lb.querySelector('img').src=p.dataset.src;lb.classList.add('on')});
+lb.onclick=e=>{if(e.target.tagName!=='IMG')lb.classList.remove('on')};
+// Reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// Falling petals in hero
+const hp=document.getElementById('heroPh');
+for(let i=0;i<9;i++){const p=document.createElement('span');p.className='petal';p.style.left=(Math.random()*100)+'%';p.style.top='0';p.style.animationDuration=(7+Math.random()*6)+'s';p.style.animationDelay=(-Math.random()*10)+'s';hp.appendChild(p)}
+</script>
+</body>
+</html>
