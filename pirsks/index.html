@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Мастерская пирсинга и тату — Омск</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0d0e;--bg2:#171315;--card:#1d181b;--ink:#f4ece9;--mute:#b4a6a5;--rose:#e8a5b4;--rose2:#c97a8d;--line:rgba(244,236,233,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Manrope,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.demo{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#2a1f24;color:var(--rose);font-size:12px;text-align:center;padding:6px;letter-spacing:.04em}
+header{position:sticky;top:0;z-index:40;background:rgba(15,13,14,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.02em}
+.logo b{color:var(--rose);font-weight:600}
+.nav nav{display:flex;gap:26px;font-size:14px;color:var(--mute)}
+.nav nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 24px;font-weight:600;font-size:15px;transition:.2s}
+.btn-p{background:var(--rose);color:#1a1013}
+.btn-p:hover{background:#f1bac6}
+.btn-g{border:1px solid var(--line);color:var(--ink)}
+.btn-g:hover{border-color:var(--rose)}
+.nav .btn{padding:9px 18px;font-size:14px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:64px 0 80px}
+.eyebrow{color:var(--rose);font-size:13px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(42px,6vw,76px);line-height:1.02;margin-bottom:22px}
+h1 i{color:var(--rose)}
+.lead{color:var(--mute);font-size:18px;max-width:520px;margin-bottom:30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.facts{display:flex;gap:30px;flex-wrap:wrap}
+.facts div{font-size:13px;color:var(--mute)}
+.facts b{display:block;font-size:26px;color:var(--ink);font-family:"Cormorant Garamond",serif;font-weight:600}
+.hero-pics{position:relative;height:560px}
+.hero-pics img{position:absolute;object-fit:cover;border-radius:18px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.hp1{width:68%;height:82%;right:0;top:0}
+.hp2{width:46%;height:52%;left:0;bottom:0;border:6px solid var(--bg)}
+section{padding:88px 0}
+.alt{background:var(--bg2)}
+h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(34px,4.4vw,52px);line-height:1.08;margin-bottom:14px}
+.sub{color:var(--mute);max-width:620px;margin-bottom:44px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc article{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 22px;transition:.25s}
+.svc article:hover{border-color:var(--rose2);transform:translateY(-3px)}
+.svc .n{font-family:"Cormorant Garamond",serif;color:var(--rose);font-size:30px}
+.svc h3{font-size:18px;margin:8px 0 8px}
+.svc p{color:var(--mute);font-size:14px}
+.tabs{display:flex;gap:8px;margin-bottom:24px}
+.tabs button{background:none;border:1px solid var(--line);color:var(--mute);border-radius:999px;padding:9px 20px;font:600 14px Manrope,sans-serif;cursor:pointer}
+.tabs button.on{background:var(--rose);color:#1a1013;border-color:var(--rose)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;transition:.3s}
+.gal img:hover{transform:scale(1.02)}
+.gal.hide{display:none}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.team article{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.team .mono{height:150px;display:flex;align-items:center;justify-content:center;font-family:"Cormorant Garamond",serif;font-size:84px;color:var(--rose);background:radial-gradient(circle at 30% 20%,#3a2630,#1d181b)}
+.team div{padding:22px}
+.team h3{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:600}
+.team .role{color:var(--rose);font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.team p{color:var(--mute);font-size:14px}
+.price{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.plist{border-top:1px solid var(--line)}
+.plist div{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.plist span{color:var(--mute);font-size:14px;display:block}
+.plist b{white-space:nowrap;font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:600;color:var(--rose)}
+.note{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.note h3{font-size:18px;margin-bottom:10px}
+.note p{color:var(--mute);font-size:14px;margin-bottom:10px}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.revs article{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.stars{color:var(--rose);letter-spacing:3px;font-size:14px;margin-bottom:10px}
+.revs p{font-size:15px;margin-bottom:14px}
+.revs .who{color:var(--mute);font-size:13px}
+.rating{display:flex;align-items:center;gap:16px;margin-bottom:36px}
+.rating b{font-family:"Cormorant Garamond",serif;font-size:64px;line-height:1;color:var(--rose)}
+.rating span{color:var(--mute);font-size:14px}
+.edu{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+.edu img{border-radius:20px;height:420px;width:100%;object-fit:cover}
+.edu ul{list-style:none;margin:20px 0 28px}
+.edu li{padding:10px 0 10px 26px;position:relative;color:var(--mute);border-bottom:1px solid var(--line)}
+.edu li:before{content:"";position:absolute;left:4px;top:19px;width:8px;height:8px;border-radius:50%;background:var(--rose)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact .row{padding:16px 0;border-bottom:1px solid var(--line)}
+.contact .row span{display:block;color:var(--mute);font-size:13px}
+.contact .row b{font-size:18px;font-weight:600}
+.book{background:linear-gradient(135deg,#2b1c22,#1d181b);border:1px solid var(--line);border-radius:22px;padding:34px}
+.book h3{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500;margin-bottom:10px}
+.book p{color:var(--mute);margin-bottom:24px}
+.book .cta{flex-direction:column}
+.book .btn{justify-content:center}
+footer{padding:30px 0 60px;color:var(--mute);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:900px){
+.nav nav{display:none}
+.hero{grid-template-columns:1fr;padding:36px 0 56px;gap:34px}
+.hero-pics{height:420px}
+.svc{grid-template-columns:1fr 1fr}
+.gal{grid-template-columns:1fr 1fr}
+.team,.revs{grid-template-columns:1fr}
+.price,.edu,.contact{grid-template-columns:1fr}
+section{padding:64px 0}
+}
+@media(max-width:480px){.svc{grid-template-columns:1fr}.nav .btn{display:none}.facts{gap:20px}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версия сайта. Все тексты и фото взяты из открытых карточек студии</div>
+<header><div class="wrap nav">
+<a href="#top" class="logo">Мастерская <b>пирсинга и тату</b></a>
+<nav><a href="#works">Работы</a><a href="#team">Мастера</a><a href="#price">Цены</a><a href="#edu">Обучение</a><a href="#contacts">Контакты</a></nav>
+<a class="btn btn-p" href="https://t.me/PIRSKS">Записаться</a>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<p class="eyebrow">Омск · Центральный округ</p>
+<h1>Пирсинг и тату <i>без страха</i> и&nbsp;спешки</h1>
+<p class="lead">Уютная студия на Булатова, 100. Аккуратные проколы, авторские татуировки, украшения в наличии и под заказ. Работаем по предварительной записи.</p>
+<div class="cta">
+<a class="btn btn-p" href="https://t.me/PIRSKS">Записаться в Telegram</a>
+<a class="btn btn-g" href="https://wa.me/79081037310">WhatsApp</a>
+</div>
+<div class="facts">
+<div><b>4.9</b>рейтинг в 2ГИС</div>
+<div><b>30</b>отзывов</div>
+<div><b>от 500 ₽</b>украшения</div>
+</div>
+</div>
+<div class="hero-pics">
+<img class="hp1" src="https://i4.photo.2gis.com/photo-gallery/9182f1fb-1693-4342-ba38-b58d45732453_984x.jpg" alt="Пирсинг уха">
+<img class="hp2" src="https://i6.photo.2gis.com/photo-gallery/23e3180d-cbb4-4d5d-adf9-041254ccd911_640x.jpg" alt="Татуировка">
+</div>
+</div>
+
+<section class="alt"><div class="wrap">
+<h2>Что мы делаем</h2>
+<p class="sub">Всё, о чём нас спрашивают чаще всего, в одном месте.</p>
+<div class="svc">
+<article><div class="n">01</div><h3>Пирсинг</h3><p>Уши, нос, септум, губы, язык, пупок. Мастер подробно объясняет, как пройдёт прокол и как его беречь.</p></article>
+<article><div class="n">02</div><h3>Микродермал</h3><p>Установка якоря и декоративная накрутка на выбор.</p></article>
+<article><div class="n">03</div><h3>Татуировки</h3><p>Графика, надписи, цветные и мини-тату. Эскиз обсуждаем с мастером заранее.</p></article>
+<article><div class="n">04</div><h3>Украшения</h3><p>Украшения для пирсинга в наличии и под заказ. Поможем подобрать.</p></article>
+</div>
+</div></section>
+
+<section id="works"><div class="wrap">
+<h2>Работы мастеров</h2>
+<p class="sub">Фото из нашей студии. Больше работ в группе ВКонтакте.</p>
+<div class="tabs"><button class="on" data-t="p">Пирсинг</button><button data-t="t">Тату</button></div>
+<div class="gal" id="g-p">
+<img loading="lazy" src="https://i1.photo.2gis.com/photo-gallery/3d55d2dc-b94e-4c4e-bed0-5ebe0b37e1f6_640x.jpg" alt="">
+<img loading="lazy" src="https://i1.photo.2gis.com/photo-gallery/5b3fa745-80d8-4861-87c3-ccae8447da29_640x.jpg" alt="">
+<img loading="lazy" src="https://i7.photo.2gis.com/photo-gallery/9bf6563c-c1a7-48d1-9034-457bdcced837_640x.jpg" alt="">
+<img loading="lazy" src="https://i7.photo.2gis.com/photo-gallery/5dbea17e-729c-477c-9d58-90146b8d0c7b_640x.jpg" alt="">
+<img loading="lazy" src="https://i2.photo.2gis.com/photo-gallery/fc2d41f1-c168-407c-a481-fa44d7bec899_640x.jpg" alt="">
+<img loading="lazy" src="https://i7.photo.2gis.com/photo-gallery/5c8084f3-e537-4ec5-8b8f-5dc60aca2c4f_640x.jpg" alt="">
+<img loading="lazy" src="https://i6.photo.2gis.com/photo-gallery/7c2e3695-fc4f-4e9e-9fa7-2ad9a9e04c28_640x.jpg" alt="">
+<img loading="lazy" src="https://i6.photo.2gis.com/photo-gallery/85965531-92ac-4106-810e-17a35d26c397_640x.jpg" alt="">
+</div>
+<div class="gal hide" id="g-t">
+<img loading="lazy" src="https://i3.photo.2gis.com/photo-gallery/a733ee82-7345-4197-b8d8-5a590f5aed67_640x.jpg" alt="">
+<img loading="lazy" src="https://i5.photo.2gis.com/photo-gallery/cc919dbc-e587-4786-ba89-6d4b3f619adb_640x.jpg" alt="">
+<img loading="lazy" src="https://i5.photo.2gis.com/photo-gallery/cef1c5c1-3350-4f2e-a3cd-45bb789fadf8_640x.jpg" alt="">
+<img loading="lazy" src="https://i6.photo.2gis.com/photo-gallery/6487b235-0faf-4bec-b731-9e83f4c54e9c_640x.jpg" alt="">
+<img loading="lazy" src="https://i6.photo.2gis.com/photo-gallery/cbbefc69-f733-40cd-94ba-47672332b3b2_640x.jpg" alt="">
+<img loading="lazy" src="https://i1.photo.2gis.com/photo-gallery/c418fcbb-af46-4757-8b59-47fc10e8bf43_640x.jpg" alt="">
+<img loading="lazy" src="https://i0.photo.2gis.com/photo-gallery/c4eff64d-7f0b-4261-bd95-686811aa917d_640x.jpg" alt="">
+<img loading="lazy" src="https://i6.photo.2gis.com/photo-gallery/23e3180d-cbb4-4d5d-adf9-041254ccd911_640x.jpg" alt="">
+</div>
+</div></section>
+
+<section class="alt" id="team"><div class="wrap">
+<h2>Мастера</h2>
+<p class="sub">Клиенты в отзывах называют мастеров по именам. Это лучшая рекомендация.</p>
+<div class="team">
+<article><div class="mono">Е</div><div><p class="role">Старший мастер · тату</p><h3>Екатерина</h3><p>Графика и надписи: от памятных дат до цитат на всю жизнь.</p></div></article>
+<article><div class="mono">К</div><div><p class="role">Мастер пирсинга</p><h3>Ксения</h3><p>«Все объяснила про прокол, как заживает, уточняла не больно ли мне. Стерильно» — из отзыва.</p></div></article>
+<article><div class="mono">С</div><div><p class="role">Мастер тату</p><h3>Соня</h3><p>«Было комфортно и совсем не страшно. Результатом очень довольна» — из отзыва.</p></div></article>
+</div>
+</div></section>
+
+<section id="price"><div class="wrap price">
+<div>
+<h2>Цены</h2>
+<p class="sub">Точную стоимость прокола или тату мастер скажет после короткой консультации. Напишите, что хотите сделать, и пришлите референс.</p>
+<div class="plist">
+<div><p>Украшения для пирсинга<span>в наличии и под заказ</span></p><b>от 500 ₽</b></div>
+<div><p>Микродермал<span>якорь + декоративная накрутка на выбор, для моделей в портфолио</span></p><b>2 800 ₽</b></div>
+<div><p>Обучение «Мастер пирсинга с 0»<span>курс для начинающих мастеров</span></p><b>25 000 ₽</b></div>
+</div>
+</div>
+<div class="note">
+<h3>Как проходит запись</h3>
+<p>1. Пишете нам в Telegram или WhatsApp, что хотите сделать.</p>
+<p>2. Мастер отвечает, подсказывает по украшению или эскизу и предлагает время.</p>
+<p>3. Приходите в студию на Булатова, 100 (5 этаж, офис 3).</p>
+<a class="btn btn-p" href="https://t.me/PIRSKS" style="margin-top:10px">Написать мастеру</a>
+</div>
+</div></section>
+
+<section class="alt" id="reviews"><div class="wrap">
+<h2>Отзывы</h2>
+<div class="rating"><b>4.9</b><span>30 отзывов в 2ГИС<br>Отзывы приведены дословно</span></div>
+<div class="revs">
+<article><div class="stars">★★★★★</div><p>«Обратилась к мастеру Ксении за проколом крыла носа! Всё сделала на высшем уровне, аккуратно! В студии все чисто и уютно»</p><div class="who">Ариша Ш.</div></article>
+<article><div class="stars">★★★★★</div><p>«Очень давно решалась на прокол. Рада что попала к Ксении, все быстро и без боли»</p><div class="who">Юлия Т.</div></article>
+<article><div class="stars">★★★★★</div><p>«Делала здесь тату, очень прекрасно, весь сеанс болтали, мастер даже предложила водичку, цены прекрасные»</p><div class="who">Вера</div></article>
+<article><div class="stars">★★★★★</div><p>«Сегодня делала прокол хряща на ухе, у мастера Ксении, все объяснила про прокол, как заживает. Стерильно»</p><div class="who">Роза</div></article>
+<article><div class="stars">★★★★★</div><p>«Мастер Соня вообще супер, все свои тату доверяю только ей! Прекрасно заживают и также прекрасно выглядят»</p><div class="who">Ксю Д.</div></article>
+<article><div class="stars">★★★★★</div><p>«Самый лучший мастер, сделала всё идеально, результат превзошел все ожидания»</p><div class="who">Екатерина Ч.</div></article>
+</div>
+</div></section>
+
+<section id="edu"><div class="wrap edu">
+<img loading="lazy" src="https://i3.photo.2gis.com/photo-gallery/ec460878-1ec0-44fe-ae9c-46cb4e58dd3a_984x.jpg" alt="Украшения для пирсинга">
+<div>
+<p class="eyebrow">Обучение</p>
+<h2>«Мастер пирсинга с&nbsp;0»</h2>
+<p class="sub" style="margin-bottom:0">Учим мастеров для салонов красоты. Курс для тех, кто начинает с нуля.</p>
+<ul><li>Стоимость курса 25 000 ₽</li><li>Подробности и даты ближайшего набора у мастера</li></ul>
+<a class="btn btn-p" href="https://t.me/PIRSKS">Узнать про обучение</a>
+</div>
+</div></section>
+
+<section class="alt" id="contacts"><div class="wrap contact">
+<div>
+<h2>Контакты</h2>
+<div class="row"><span>Адрес</span><b>Омск, улица Булатова, 100, 5 этаж, офис 3</b></div>
+<div class="row"><span>Телефон</span><b><a href="tel:+79081037310">+7 908 103-73-10</a></b></div>
+<div class="row"><span>Режим работы</span><b>По предварительной записи</b></div>
+<div class="row"><span>Соцсети</span><b><a href="https://t.me/PIRSKS">Telegram</a> · <a href="https://wa.me/79081037310">WhatsApp</a> · <a href="https://vk.com/club239943055">ВКонтакте</a></b></div>
+<div class="row"><span>Как найти</span><b><a href="https://2gis.ru/omsk/firm/70000001115641347">Открыть в 2ГИС →</a></b></div>
+</div>
+<div class="book">
+<h3>Запишитесь на прокол или тату</h3>
+<p>Напишите, что хотите сделать. Мастер ответит и подберёт удобное время.</p>
+<div class="cta">
+<a class="btn btn-p" href="https://t.me/PIRSKS">Написать в Telegram</a>
+<a class="btn btn-g" href="https://wa.me/79081037310">Написать в WhatsApp</a>
+<a class="btn btn-g" href="tel:+79081037310">Позвонить</a>
+</div>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">© Мастерская пирсинга и тату, Омск · Есть противопоказания, проконсультируйтесь с мастером</div></footer>
+<script>
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));document.getElementById('g-p').classList.toggle('hide',b.dataset.t!=='p');document.getElementById('g-t').classList.toggle('hide',b.dataset.t!=='t')});
+</script>
+</body>
+</html>
