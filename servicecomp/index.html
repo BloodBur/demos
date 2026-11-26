@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Сервис Комп · ремонт смартфонов, ноутбуков и ПК в Волгограде</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1116;--bg2:#151a21;--card:#1b2129;--line:#2a323d;--tx:#e9eef3;--mut:#9aa6b2;--ac:#c6ff3d;--ac2:#3de0ff;--warn:#ff8a3d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:16px/1.55 Onest,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.w{max-width:1140px;margin:0 auto;padding:0 20px}
+.mono{font-family:"JetBrains Mono",monospace}
+/* top */
+.promo{background:var(--ac);color:#111;font-weight:600;font-size:14px;text-align:center;padding:8px 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(14,17,22,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}
+.logo i{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--ac),var(--ac2));display:grid;place-items:center;color:#0e1116;font-style:normal;font-family:"JetBrains Mono";font-size:15px}
+nav{display:flex;gap:22px;font-size:15px;color:var(--mut)}
+nav a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;padding:13px 20px;font-weight:600;font-size:15px;border:0;cursor:pointer;font-family:inherit;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.b1{background:var(--ac);color:#0e1116}
+.b2{background:transparent;color:var(--tx);border:1px solid var(--line)}
+.hd .btn{padding:10px 16px}
+/* hero */
+.hero{padding:64px 0 48px;position:relative}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 80% 20%,rgba(61,224,255,.12),transparent),radial-gradient(500px 300px at 10% 90%,rgba(198,255,61,.08),transparent);pointer-events:none}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative}
+.hg>*{min-width:0}
+.tag{display:inline-block;font-size:13px;color:var(--ac);border:1px solid rgba(198,255,61,.35);border-radius:99px;padding:5px 12px;margin-bottom:18px}
+h1{font-size:54px;line-height:1.05;font-weight:800;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--ac)}
+.lead{color:var(--mut);font-size:18px;margin:18px 0 26px;max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chips span{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:14px}
+/* terminal */
+.term{background:var(--bg2);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.term-h{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--line);align-items:center}
+.term-h b{width:10px;height:10px;border-radius:50%;background:#3a434f}
+.term-h b:first-child{background:#ff5f57}.term-h b:nth-child(2){background:#febc2e}.term-h b:nth-child(3){background:#28c840}
+.term-h span{margin-left:8px;font-size:12px;color:var(--mut)}
+.term-b{padding:18px 18px 20px;font-size:14px}
+.term-b p{margin:4px 0;color:var(--mut)}
+.term-b .ok{color:var(--ac)}
+.term-b .c{color:var(--ac2)}
+.dv{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0 6px}
+.dv button{background:var(--card);border:1px solid var(--line);color:var(--tx);border-radius:10px;padding:10px 4px;font:500 13px Onest;cursor:pointer}
+.dv button.on{border-color:var(--ac);color:var(--ac)}
+.pl{list-style:none;margin-top:10px}
+.pl li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.pl li b{color:var(--ac);white-space:nowrap;font-family:"JetBrains Mono"}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:8px 0 0}
+.st{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.st b{display:block;font:700 30px "JetBrains Mono";color:var(--ac)}
+.st span{color:var(--mut);font-size:14px}
+section{padding:72px 0}
+h2{font-size:38px;line-height:1.1;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+.sub{color:var(--mut);max-width:620px;margin-bottom:34px}
+/* services */
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.s{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:border-color .2s}
+.s:hover{border-color:var(--ac)}
+.s .ic{width:46px;height:46px;border-radius:12px;background:rgba(198,255,61,.1);display:grid;place-items:center;margin-bottom:14px}
+.s h3{font-size:19px;margin-bottom:6px}
+.s p{color:var(--mut);font-size:15px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{border-top:2px solid var(--ac);padding-top:16px}
+.step:before{counter-increment:s;content:"0" counter(s);font:700 14px "JetBrains Mono";color:var(--ac)}
+.step h3{font-size:18px;margin:8px 0 6px}
+.step p{color:var(--mut);font-size:15px}
+/* brands */
+.brands{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;background:var(--bg2)}
+.track{display:flex;gap:44px;width:max-content;animation:mv 40s linear infinite;font:700 20px "JetBrains Mono";color:#55616e}
+@keyframes mv{to{transform:translateX(-50%)}}
+/* reviews */
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.r{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.r p{font-size:15px;overflow-wrap:anywhere}
+.r .who{display:flex;align-items:center;gap:10px;margin-top:auto;color:var(--mut);font-size:14px}
+.r .who i{width:34px;height:34px;border-radius:50%;background:var(--bg2);border:1px solid var(--line);display:grid;place-items:center;font-style:normal;color:var(--ac);font-weight:600;font-size:13px}
+.stars{color:var(--ac);letter-spacing:2px}
+/* form + contacts */
+.fc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fc>*{min-width:0}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.box h3{font-size:22px;margin-bottom:16px}
+label{display:block;font-size:13px;color:var(--mut);margin:12px 0 6px}
+input,select,textarea{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--tx);font:15px Onest}
+textarea{min-height:80px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ac)}
+.box .btn{width:100%;margin-top:18px}
+.done{display:none;margin-top:14px;color:var(--ac);font-weight:500}
+.ci{list-style:none}
+.ci li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.ci li:last-child{border:0}
+.ci b{display:block;font-weight:600}
+.ci span{color:var(--mut);font-size:14px}
+.pay{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.pay em{font-style:normal;font-size:12px;border:1px solid var(--line);border-radius:8px;padding:3px 8px;color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:28px 0 100px;color:var(--mut);font-size:14px;text-align:center}
+.fl{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:30}
+.fl a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.4)}
+.fl .wa{background:#25d366}.fl .tg{background:#2aabee}.fl .ph{background:var(--ac)}
+@media(max-width:900px){
+ nav{display:none}
+ .hg,.fc{grid-template-columns:1fr}
+ h1{font-size:38px}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .sv,.rv{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ h2{font-size:30px}
+ section{padding:54px 0}
+}
+@media(max-width:480px){
+ .w{padding:0 16px}
+ h1{font-size:33px}
+ .hd .btn span{display:none}
+ .steps{grid-template-columns:1fr}
+ .dv{grid-template-columns:repeat(2,1fr)}
+ .st b{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="promo">Скидка 30% на ремонт · Диагностика бесплатно · Гарантия до 100 дней</div>
+<header><div class="w hd">
+ <a class="logo" href="#"><i>SK</i>Сервис Комп</a>
+ <nav><a href="#prices">Цены</a><a href="#services">Услуги</a><a href="#how">Как работаем</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+ <a class="btn b1" href="tel:+79692850271"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>+7 969 285-02-71</span></a>
+</div></header>
+
+<section class="hero" style="padding-top:56px"><div class="w hg">
+ <div>
+  <div class="tag mono">ТЦ Киндер Молл · Рабоче-Крестьянская, 9</div>
+  <h1>Сломалось? <em>Починим</em> сегодня.</h1>
+  <p class="lead">Ремонт смартфонов, ноутбуков, планшетов, ПК и телевизоров в Волгограде. Ремонт от 20 минут, заберёте устройство в день обращения.</p>
+  <div class="cta">
+   <a class="btn b1" href="#form">Записаться на ремонт</a>
+   <a class="btn b2" href="https://wa.me/79692850271" target="_blank" rel="noopener">Написать в WhatsApp</a>
+  </div>
+  <div class="chips"><span>Android и Apple</span><span>Выезд на дом</span><span>Доставка</span><span>Восстановление данных</span></div>
+ </div>
+ <div class="term" id="prices">
+  <div class="term-h"><b></b><b></b><b></b><span class="mono">diagnostics.exe</span></div>
+  <div class="term-b mono">
+   <p>&gt; Что сломалось?</p>
+   <div class="dv" id="dv">
+    <button class="on" data-k="ph">Смартфон</button><button data-k="nb">Ноутбук</button><button data-k="tb">Планшет</button><button data-k="tv">Телевизор</button>
+   </div>
+   <ul class="pl" id="pl"></ul>
+   <p style="margin-top:12px"><span class="ok">✔</span> Диагностика: <span class="ok">0 ₽</span>, даже если откажетесь от ремонта</p>
+  </div>
+ </div>
+</div>
+<div class="w" style="margin-top:44px"><div class="stats">
+ <div class="st"><b>4.8</b><span>рейтинг в 2ГИС</span></div>
+ <div class="st"><b>186</b><span>оценок клиентов</span></div>
+ <div class="st"><b>3</b><span>филиала в Волгограде</span></div>
+ <div class="st"><b>20 мин</b><span>самый быстрый ремонт</span></div>
+</div></div>
+</section>
+
+<div class="brands"><div class="track" id="track"></div></div>
+
+<section id="services"><div class="w">
+ <h2>Что ремонтируем</h2>
+ <p class="sub">Не только телефоны. Чиним всё, что с проводом или батарейкой, и помогаем настроить.</p>
+ <div class="sv">
+  <div class="s"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Смартфоны</h3><p>Замена дисплея и батареи, разъём питания, ремонт плат. Apple, Samsung, Xiaomi, Honor и другие.</p></div>
+  <div class="s"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></div><h3>Ноутбуки и ПК</h3><p>Тормозит, гудит, отключается, синий экран, залили жидкостью. Чистка и замена термоинтерфейса.</p></div>
+  <div class="s"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg></div><h3>Планшеты</h3><p>Сенсорное стекло и дисплей, батарея, разъём питания, ремонт платы.</p></div>
+  <div class="s"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="2"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M8 21h8"/></svg></div><h3>Телевизоры</h3><p>Нет изображения при звуке, подсветка, блок питания, материнская плата, настройка.</p></div>
+  <div class="s"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3>Восстановление данных</h3><p>Достаём фото, документы и контакты с повреждённых устройств и носителей.</p></div>
+  <div class="s"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></div><h3>Бытовая техника</h3><p>Пылесосы, микроволновки, кофемашины, мультиварки, водонагреватели. Установка техники.</p></div>
+ </div>
+</div></section>
+
+<section id="how" style="background:var(--bg2)"><div class="w">
+ <h2>Как это работает</h2>
+ <p class="sub">Без очередей и сюрпризов в цене.</p>
+ <div class="steps">
+  <div class="step"><h3>Пишете или приносите</h3><p>WhatsApp и звонки 24 часа. Можно вызвать мастера на дом или оформить доставку.</p></div>
+  <div class="step"><h3>Бесплатная диагностика</h3><p>Находим причину и называем цену заранее. Отказались? Диагностика всё равно 0 ₽.</p></div>
+  <div class="step"><h3>Ремонт от 20 минут</h3><p>Большинство ремонтов в день обращения. Если нужна запчасть, честно предупредим о сроках.</p></div>
+  <div class="step"><h3>Гарантия и советы</h3><p>Гарантия на работы и рекомендации, как не допустить повторной поломки.</p></div>
+ </div>
+</div></section>
+
+<section id="reviews"><div class="w">
+ <h2>Что говорят клиенты</h2>
+ <p class="sub">4.8 из 5 по 186 оценкам в 2ГИС. Несколько отзывов оттуда:</p>
+ <div class="rv">
+  <div class="r"><div class="stars">★★★★★</div><p>Ноутбук работал просто замечательно, друзья помогли в игре проверить. В дальнейшем буду доверять только вашему сервис-центру.</p><div class="who"><i>ЮЯ</i>Юлия Янчук · ноябрь 2026</div></div>
+  <div class="r"><div class="stars">★★★★★</div><p>Обслужил пару ноутбуков: замена термоинтерфейсов, чистка от пыли. Всё сделали очень быстро, буквально за пару часов. Цена адекватная.</p><div class="who"><i>НН</i>Никита Никитов · июль 2026</div></div>
+  <div class="r"><div class="stars">★★★★★</div><p>Всё было очень хорошо, быстро, о задержке предупреждали, всё объяснили. Стоимость адекватная, гарантию и наставления получила. Рекомендую!</p><div class="who"><i>ВИ</i>Валерия Иванова · октябрь 2026</div></div>
+  <div class="r"><div class="stars">★★★★★</div><p>Подключили смарт-часы к телефону. Сделали быстро и качественно, звонки принимает и набирает с часов. Адекватно и недорого.</p><div class="who"><i>ВД</i>Владислав Давыдов · июль 2026</div></div>
+  <div class="r"><div class="stars">★★★★★</div><p>Обращалась несколько раз. Всегда оперативная работа и отзывчивое отношение.</p><div class="who"><i>СЕ</i>Светлана Егорова · сентябрь 2026</div></div>
+  <div class="r"><div class="stars">★★★★★</div><p>Отличное обслуживание, очень добрый персонал, всё быстро.</p><div class="who"><i>ОБ</i>Оксана Балышева · июль 2026</div></div>
+ </div>
+</div></section>
+
+<section id="contacts" style="background:var(--bg2)"><div class="w">
+ <h2>Запись на ремонт</h2>
+ <p class="sub">Оставьте заявку, перезвоним и скажем примерную стоимость.</p>
+ <div class="fc">
+  <form class="box" id="form" onsubmit="event.preventDefault();document.getElementById('ok').style.display='block';this.querySelector('button').disabled=true">
+   <h3>Заявка</h3>
+   <label>Устройство</label>
+   <select><option>Смартфон</option><option>Ноутбук / ПК</option><option>Планшет</option><option>Телевизор</option><option>Другое</option></select>
+   <label>Что случилось</label>
+   <textarea placeholder="Например: разбил экран, не заряжается"></textarea>
+   <label>Имя</label><input placeholder="Как к вам обращаться">
+   <label>Телефон</label><input type="tel" placeholder="+7">
+   <button class="btn b1" type="submit">Отправить заявку</button>
+   <div class="done" id="ok">Спасибо! Мастер свяжется с вами в ближайшее время.</div>
+  </form>
+  <div class="box">
+   <h3>Контакты</h3>
+   <ul class="ci">
+    <li><div><b>ТЦ Киндер Молл, 1 этаж</b><span>Рабоче-Крестьянская улица, 9, Ворошиловский район</span></div></li>
+    <li><div><b>Открываемся в 10:00</b><span>WhatsApp и звонки 24 часа</span></div></li>
+    <li><div><b><a href="tel:+79692850271">+7 969 285-02-71</a></b><span><a href="mailto:servicecomprf@mail.ru">servicecomprf@mail.ru</a></span></div></li>
+    <li><div><b>Удобно добраться</b><span>Пандус, автоматическая дверь, вход с коляской</span></div></li>
+    <li><div><b>Оплата</b><div class="pay"><em>Карта</em><em>Наличные</em><em>QR-код</em><em>Перевод</em></div></div></li>
+   </ul>
+   <div class="cta" style="margin-top:14px"><a class="btn b2" href="https://wa.me/79692850271" target="_blank" rel="noopener">WhatsApp</a><a class="btn b2" href="https://t.me/O_remonte_vse" target="_blank" rel="noopener">Telegram</a><a class="btn b2" href="https://vk.ru/service_centr_rf" target="_blank" rel="noopener">ВКонтакте</a></div>
+  </div>
+ </div>
+</div></section>
+
+<footer><div class="w">Сервис Комп · сервисный центр по ремонту смартфонов, ноутбуков, ПК · Волгоград</div></footer>
+
+<div class="fl">
+ <a class="wa" href="https://wa.me/79692850271" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+ <a class="tg" href="https://t.me/O_remonte_vse" target="_blank" rel="noopener" aria-label="Telegram"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.5 3c.9-.3 1.6.2 1.4 1.3z"/></svg></a>
+ <a class="ph" href="tel:+79692850271" aria-label="Позвонить"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0e1116" stroke-width="2.4"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+</div>
+
+<script>
+// Price data taken from the company's 2GIS price list
+const P={
+ ph:[["Замена дисплея","от 1 190 ₽"],["Замена батареи","от 290 ₽"],["Разъём питания (не заряжается)","от 890 ₽"],["Ремонт платы","от 926 ₽"]],
+ nb:[["Замена дисплея","от 390 ₽"],["Тормозит, гудит, отключается","от 900 ₽"],["Чистка от влаги","от 590 ₽"],["Синий экран","от 580 ₽"]],
+ tb:[["Сенсорное стекло / дисплей","от 390 ₽"],["Замена батареи","от 290 ₽"],["Ремонт платы","от 990 ₽"],["Разъём питания","от 390 ₽"]],
+ tv:[["Подсветка (звук есть, картинки нет)","от 990 ₽"],["Материнская плата","от 1 490 ₽"],["Блок питания","от 380 ₽"],["Настройка телевизора","от 690 ₽"]]
+};
+const pl=document.getElementById('pl');
+function show(k){pl.innerHTML=P[k].map(r=>'<li><span>'+r[0]+'</span><b>'+r[1]+'</b></li>').join('')}
+document.querySelectorAll('#dv button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#dv button').forEach(x=>x.classList.remove('on'));b.classList.add('on');show(b.dataset.k)});
+show('ph');
+// Brand marquee, duplicated for a seamless loop
+const B=["Apple","Samsung","Xiaomi","Honor","Huawei","Realme","ASUS","Lenovo","Acer","Tecno","Poco","OnePlus","Sony","LG","Vivo","OPPO"];
+document.getElementById('track').innerHTML=B.concat(B).map(x=>'<span>'+x+'</span>').join('');
+</script>
+</body>
+</html>
