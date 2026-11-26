@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Бамбика — частный сад в Братске</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#eaf6ff; --sun:#ffc93c; --coral:#ff6f61; --mint:#3cc8a5; --berry:#7b5cff;
+  --ink:#24304a; --mute:#5d6a82; --card:#fff; --line:#dbe9f5; --bg:#fffdf7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.6 Nunito,system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Fredoka,Nunito,sans-serif;line-height:1.12}
+h2{font-size:clamp(28px,4.2vw,44px);margin-bottom:12px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:14px;color:var(--coral);background:#ffe9e6;padding:6px 14px;border-radius:999px;margin-bottom:14px}
+.lead{color:var(--mute);max-width:640px}
+.demo{background:var(--ink);color:#dce6f5;font-size:13px;text-align:center;padding:7px 14px}
+
+header{position:sticky;top:0;z-index:20;background:rgba(255,253,247,.94);backdrop-filter:blur(8px)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.logo{font-family:Fredoka;font-weight:700;font-size:26px;text-decoration:none;letter-spacing:.5px}
+.logo span:nth-child(1){color:var(--coral)}.logo span:nth-child(2){color:var(--sun)}.logo span:nth-child(3){color:var(--mint)}.logo span:nth-child(4){color:var(--berry)}
+.nav{display:flex;gap:22px;font-weight:700;font-size:15px}
+.nav a{text-decoration:none;opacity:.75}.nav a:hover{opacity:1;color:var(--coral)}
+.hd-btn{white-space:nowrap;font-weight:800;text-decoration:none;background:var(--mint);color:#fff;padding:10px 18px;border-radius:999px;font-size:15px}
+@media(max-width:860px){.nav{display:none}}
+
+.hero{padding:40px 0 60px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hero-grid>*{min-width:0}
+.hero h1{font-size:clamp(34px,5.4vw,60px)}
+.hero h1 .u{background:linear-gradient(transparent 62%,var(--sun) 62%)}
+.hero p{margin:18px 0 26px;font-size:19px;color:var(--mute);max-width:520px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 24px;border-radius:999px;font-weight:800;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--coral);color:#fff;box-shadow:0 12px 26px -12px var(--coral)}
+.btn-soft{background:#fff;border:2px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chips span{background:#fff;border:1px solid var(--line);padding:8px 14px;border-radius:14px;font-weight:700;font-size:15px}
+.chips b{color:var(--coral)}
+.hero-art{position:relative}
+.blob{border-radius:46% 54% 42% 58% / 52% 44% 56% 48%;overflow:hidden;aspect-ratio:1/1;border:8px solid #fff;box-shadow:0 30px 60px -30px rgba(36,48,74,.45)}
+.blob img{width:100%;height:100%;object-fit:cover}
+.dot{position:absolute;border-radius:50%}
+.d1{width:70px;height:70px;background:var(--sun);top:-10px;right:30px;z-index:-1}
+.d2{width:40px;height:40px;background:var(--mint);bottom:30px;left:-10px}
+.d3{width:22px;height:22px;background:var(--berry);top:40%;right:-8px}
+.sticker{position:absolute;right:0;bottom:-14px;background:#fff;border-radius:20px;padding:12px 16px;box-shadow:0 16px 36px -16px rgba(36,48,74,.4);font-weight:800;max-width:230px;font-size:15px}
+.sticker small{display:block;font-weight:600;color:var(--mute);font-size:13px}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:420px;margin:0 auto;order:-1}}
+
+section{padding:64px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.two>*{min-width:0}
+.box{border-radius:30px;padding:30px;position:relative;overflow:hidden}
+.box h3{font-size:26px;margin-bottom:10px}
+.box ul{list-style:none;display:grid;gap:8px;margin-top:14px}
+.box li{display:flex;gap:10px;align-items:flex-start}
+.box li::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:currentColor;margin-top:9px;opacity:.6}
+.garden{background:#fff4d6}
+.studio{background:#e3f7f1}
+.box .meta{margin-top:18px;font-weight:700;font-size:15px;color:var(--mute)}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+
+.prog{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.prog div{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px}
+.prog .e{font-size:30px}
+.prog h3{font-size:19px;margin-top:8px}
+@media(max-width:860px){.prog{grid-template-columns:1fr 1fr}}
+
+.why{background:var(--sky)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.why-grid div{background:#fff;border-radius:24px;padding:24px}
+.why-grid h3{font-size:21px;margin-bottom:6px}
+.why-grid p{color:var(--mute);font-size:15px}
+.why-grid q{display:block;margin-top:12px;font-style:italic;font-size:14px;color:var(--ink);border-left:3px solid var(--sun);padding-left:10px}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr}}
+
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:170px;gap:12px;margin-top:30px}
+.gal figure{border-radius:22px;overflow:hidden;background:var(--sky)}
+.gal img{width:100%;height:100%;object-fit:cover}
+.g1{grid-column:span 3;grid-row:span 2}.g2{grid-column:span 3;grid-row:span 2}.g3,.g4,.g5{grid-column:span 2;grid-row:span 2}
+@media(max-width:700px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.g1,.g2,.g3,.g4,.g5{grid-column:span 1;grid-row:span 1}.g1{grid-column:span 2;grid-row:span 2}}
+
+.rv-head{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap}
+.score{background:#fff;border:1px solid var(--line);border-radius:20px;padding:12px 18px;display:flex;gap:12px;align-items:center}
+.score b{font-family:Fredoka;font-size:36px;color:var(--coral)}
+.score small{display:block;color:var(--mute);font-size:13px}
+.rv{columns:3 300px;column-gap:16px;margin-top:30px}
+.rv blockquote{break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;margin-bottom:16px}
+.rv p{font-size:16px}
+.rv cite{display:block;margin-top:12px;font-style:normal;font-weight:800;font-size:15px}
+.rv cite span{color:var(--sun);margin-left:6px}
+
+.ct{background:var(--ink);color:#fff;border-radius:36px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.ct>*{min-width:0}
+.ct h2{color:#fff}
+.ct p{color:#c9d5e8}
+.ct dl{display:grid;gap:14px;margin-top:20px}
+.ct dt{font-weight:800;font-size:14px;color:var(--sun)}
+.ct dd{color:#e3ebf7}
+.links{display:grid;gap:12px;align-content:start}
+.links a{display:flex;justify-content:space-between;gap:12px;align-items:center;background:rgba(255,255,255,.08);border-radius:18px;padding:16px 18px;text-decoration:none;font-weight:800}
+.links a:hover{background:rgba(255,255,255,.15)}
+.links small{font-weight:600;color:#c9d5e8}
+@media(max-width:860px){.ct{grid-template-columns:1fr;padding:28px 20px;border-radius:26px}}
+@media(max-width:480px){.hero h1{font-size:32px}h2{font-size:26px}.btn{width:100%}}
+
+footer{padding:28px 0 100px;text-align:center;color:var(--mute);font-size:13px}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;text-decoration:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
+.fab .wa{background:#25d366}.fab .tg{background:#2aa3e0}.fab .ph{background:var(--coral)}
+.fab svg{width:26px;height:26px;fill:#fff}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версия сайта. Программы, отзывы и фото взяты из открытой карточки «Бамбика» в 2ГИС.</div>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top"><span>Бам</span><span>би</span><span>к</span><span>а</span></a>
+    <nav class="nav"><a href="#garden">Сад</a><a href="#studio">Занятия</a><a href="#photos">Фото</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+    <a class="hd-btn" href="https://wa.me/79501253079" target="_blank" rel="noopener">Записаться</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">Братск · 5-й микрорайон</span>
+      <h1>Частный сад и студия развития, куда ребёнок <span class="u">идёт с радостью</span></h1>
+      <p>Мини-группы, добрые педагоги и много развивающих занятий: от «говорилки» и рисования песком до подготовки к школе.</p>
+      <div class="btns">
+        <a class="btn btn-main" href="https://wa.me/79501253079" target="_blank" rel="noopener">Записаться на пробное</a>
+        <a class="btn btn-soft" href="#studio">Все занятия</a>
+      </div>
+      <div class="chips">
+        <span><b>4.8</b> ★ в 2ГИС</span>
+        <span>09:00–19:00</span>
+        <span>мини-группы</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+      <div class="blob"><img src="https://i5.photo.2gis.com/photo-gallery/8c6f4162-0024-4332-b246-5ba40a912aca_984x.jpg" alt="Занятие в Бамбике"></div>
+      <div class="sticker">«Лучший сад, о котором мы могли мечтать!»<small>Галина, отзыв в 2ГИС</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="garden" style="padding-top:20px">
+  <div class="wrap">
+    <span class="tag">Два формата</span>
+    <h2>Сад на весь день или занятия по расписанию</h2>
+    <div class="two">
+      <div class="box garden">
+        <h3>Частный детский сад</h3>
+        <p>Для малышей, которым нужен уютный второй дом.</p>
+        <ul>
+          <li>Группы до 3 лет</li>
+          <li>Мини-группы и индивидуальный подход</li>
+          <li>Качественное питание</li>
+          <li>Группы продлённого дня</li>
+        </ul>
+        <p class="meta">09:00–19:00, по записи</p>
+      </div>
+      <div class="box studio" id="studio">
+        <h3>Студия развития</h3>
+        <p>Занятия по записи, можно договориться под режим ребёнка.</p>
+        <ul>
+          <li>Подготовка к школе</li>
+          <li>Английский язык</li>
+          <li>Логопед и занятия «говорилка»</li>
+          <li>Творчество: лепка, рисование песком, каллиграфия</li>
+        </ul>
+        <p class="meta">По предварительной записи</p>
+      </div>
+    </div>
+    <div class="prog">
+      <div><div class="e">🎒</div><h3>Подготовка к школе</h3></div>
+      <div><div class="e">🗣️</div><h3>Логопед</h3></div>
+      <div><div class="e">🇬🇧</div><h3>Английский</h3></div>
+      <div><div class="e">🎨</div><h3>Рисование песком</h3></div>
+      <div><div class="e">🧸</div><h3>Лепка из пластилина</h3></div>
+      <div><div class="e">✒️</div><h3>Каллиграфия</h3></div>
+      <div><div class="e">✂️</div><h3>Курсы творчества</h3></div>
+      <div><div class="e">🌙</div><h3>Продлённый день</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <span class="tag">Почему выбирают нас</span>
+    <h2>Об этом пишут родители</h2>
+    <div class="why-grid">
+      <div><h3>Мягкая адаптация</h3><p>Ребёнок быстро привыкает и ходит с удовольствием.</p><q>Шли со слезами и страхом, а уже через неделю сын перестал оглядываться у двери.</q></div>
+      <div><h3>Подход к каждому</h3><p>Маленькие группы, внимательные воспитатели и продуманный план занятий.</p><q>дети под присмотром, к каждому индивидуальный подход</q></div>
+      <div><h3>Удобный режим</h3><p>Время занятий подстраиваем под ребёнка.</p><q>Всегда по времени бодрствования ребенка можно договориться.</q></div>
+    </div>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="wrap">
+    <span class="tag">Жизнь сада</span>
+    <h2>Как проходит день в Бамбике</h2>
+    <div class="gal">
+      <figure class="g1"><img loading="lazy" src="https://i4.photo.2gis.com/photo-gallery/dae97016-b695-46ee-a7fc-1e948a4cb655_640x.jpg" alt="Занятие за столом"></figure>
+      <figure class="g2"><img loading="lazy" src="https://i0.photo.2gis.com/photo-gallery/67eb34f3-dfc2-4d51-9014-daf6656d1605_640x.jpg" alt="Игры в группе"></figure>
+      <figure class="g3"><img loading="lazy" src="https://i7.photo.2gis.com/photo-gallery/27aafd7b-182e-42cd-9ebd-c52124779e39_640x.jpg" alt="Игровая"></figure>
+      <figure class="g4"><img loading="lazy" src="https://i9.photo.2gis.com/photo-gallery/6bb9dbcb-ac8b-4d05-b582-4dfe489c82b9_640x.jpg" alt="Поделка"></figure>
+      <figure class="g5"><img loading="lazy" src="https://i1.photo.2gis.com/photo-gallery/a465e5ff-001f-43d0-8d45-bbb823c57df5_640x.jpg" alt="Интерьер группы"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:20px">
+  <div class="wrap">
+    <div class="rv-head">
+      <div><span class="tag">Отзывы</span><h2>Родители о нас</h2></div>
+      <div class="score"><b>4.8</b><div><span style="color:var(--sun)">★★★★★</span><small>32 оценки в 2ГИС</small></div></div>
+    </div>
+    <div class="rv">
+      <blockquote><p>«Лучший сад, о котором мы могли мечтать! Шли со слезами и страхом, а уже через неделю сын перестал оглядываться у двери. Огромное счастье видеть, как ему здесь хорошо.»</p><cite>Галина Б<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Дочке нравится ходить на подготовку к школе, всегда с удовольствием идет на занятия. Благодаря профессионализму педагога дочка тянется к новым знаниям.»</p><cite>Дарья Горбачева<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Замечательный детский сад! Добродушные педагоги и отзывчивый руководитель. Ребенок счастлив, а я - вдвойне) Много развивающих занятий, мини-группы и качественное питание. С удовольствием вернёмся к вам снова!»</p><cite>Елена Чистякова<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Я долго искала садик для сыночка, выбрала бамбика и очень рада. Хочу выразить свою благодарность всему персоналу садика за высокий профессионализм, чуткое отношение к моему ребенку, доброту и заботу. Сын ходит в садик с удовольствием, а это наиболее важный показатель для меня, как для мамы.»</p><cite>Полина Соснина<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«С года посещением занятия "говорилка "прекрасный педагог, подход к любому ребёнку найдет , интересные, развивающие занятия. Ребенку нравится, ходит с удовольствием»</p><cite>Софья Цибик<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Прекрасный детский садик , дети под присмотром, к каждому индивидуальный подход, добрые воспитатели и грамотно построенный план занятий.»</p><cite>Кристина Моняхина<span>★★★★★</span></cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="wrap">
+    <div class="ct">
+      <div>
+        <h2>Приходите знакомиться</h2>
+        <p>Напишите или позвоните, подберём группу или занятие под возраст ребёнка.</p>
+        <dl>
+          <dt>Адрес</dt><dd>Братск, 5-й микрорайон, улица Гиндина, 10, 1 этаж</dd>
+          <dt>Время работы</dt><dd>09:00–19:00, по предварительной записи</dd>
+          <dt>Оплата</dt><dd>Наличные, перевод с карты, через банк, по QR-коду</dd>
+        </dl>
+      </div>
+      <div class="links">
+        <a href="tel:+79501253079">+7 950 125-30-79 <small>позвонить</small></a>
+        <a href="tel:+73953216465">+7 (3953) 21-64-65 <small>позвонить</small></a>
+        <a href="https://wa.me/79501253079" target="_blank" rel="noopener">WhatsApp <small>написать</small></a>
+        <a href="https://t.me/Bambika" target="_blank" rel="noopener">Telegram <small>@Bambika</small></a>
+        <a href="https://vk.ru/bambikaclub.bratsk" target="_blank" rel="noopener">ВКонтакте <small>BamBika club</small></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Бамбика · студия развития и частный сад · Братск</footer>
+
+<div class="fab">
+  <a class="wa" href="https://wa.me/79501253079" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+  <a class="tg" href="https://t.me/Bambika" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.5 4.3 18.4 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.6 13 2 11.6c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.3 1.1z"/></svg></a>
+  <a class="ph" href="tel:+79501253079" aria-label="Позвонить"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+</div>
+</body>
+</html>
