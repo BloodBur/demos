@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Пилка-ми — ногтевая студия в Елабуге</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blush:#f7e6e1; --nude:#efd5cc; --rose:#c9737a; --plum:#4a2338; --plum2:#6b3552;
+  --ink:#2d1a24; --mute:#7d6670; --bg:#fcf7f5; --card:#fff; --line:#ecdad5; --gold:#c8a46a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.6 Montserrat,system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05}
+h2{font-size:clamp(34px,5vw,54px);margin-bottom:12px}
+h2 i{color:var(--rose);font-weight:500}
+.over{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin-bottom:12px;display:block}
+.lead{color:var(--mute);max-width:600px}
+.demo{background:var(--plum);color:#f3dfe6;font-size:13px;text-align:center;padding:7px 14px}
+
+header{position:sticky;top:0;z-index:20;background:rgba(252,247,245,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600;text-decoration:none;color:var(--plum)}
+.logo i{color:var(--rose)}
+.nav{display:flex;gap:24px;font-size:14px;font-weight:500}
+.nav a{text-decoration:none;opacity:.75}.nav a:hover{opacity:1;color:var(--rose)}
+.hd-btn{white-space:nowrap;font-weight:600;font-size:14px;text-decoration:none;background:var(--plum);color:#fff;padding:11px 18px;border-radius:999px}
+@media(max-width:860px){.nav{display:none}}
+
+.hero{padding:56px 0 64px;background:radial-gradient(900px 500px at 85% 10%,var(--nude),transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero-grid>*{min-width:0}
+.hero h1{font-size:clamp(44px,7vw,86px);color:var(--plum)}
+.hero h1 i{color:var(--rose)}
+.hero p{margin:20px 0 28px;font-size:18px;color:var(--mute);max-width:500px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--rose);color:#fff;box-shadow:0 14px 28px -14px var(--rose)}
+.btn-line{border:1.5px solid var(--plum);color:var(--plum)}
+.facts{display:flex;gap:30px;margin-top:36px;flex-wrap:wrap}
+.facts b{font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--plum);display:block;line-height:1}
+.facts span{font-size:13px;color:var(--mute)}
+.arch{position:relative;justify-self:center;width:min(100%,420px)}
+.arch .frame{border-radius:220px 220px 24px 24px;overflow:hidden;aspect-ratio:4/5;background:var(--nude);border:10px solid #fff;box-shadow:0 30px 60px -30px rgba(74,35,56,.45)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch .hours{position:absolute;left:-14px;bottom:30px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 16px 30px -16px rgba(74,35,56,.4);font-size:14px}
+.arch .hours b{display:block;color:var(--plum)}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.arch{order:-1;width:min(100%,340px)}.arch .hours{left:0}}
+
+section{padding:70px 0}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+.svc div{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.svc h3{font-size:24px;color:var(--plum);margin-bottom:6px}
+.svc p{font-size:14px;color:var(--mute)}
+@media(max-width:860px){.svc{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.svc{grid-template-columns:1fr}}
+
+.price{background:var(--plum);color:#fff}
+.price h2{color:#fff}.price .lead{color:#e3c9d4}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 20px}
+.tabs button{font:600 14px Montserrat,sans-serif;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;padding:10px 18px;border-radius:999px;cursor:pointer}
+.tabs button.on{background:#fff;color:var(--plum);border-color:#fff}
+.plist{display:none;grid-template-columns:1fr 1fr;gap:0 40px}
+.plist.on{display:grid}
+.row{display:flex;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.row span{color:#f1e2e8}
+.row b{white-space:nowrap;font-weight:600;color:var(--gold)}
+.pnote{margin-top:20px;font-size:13px;color:#cfb3bf}
+@media(max-width:700px){.plist.on{grid-template-columns:1fr}}
+
+.masters{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:32px}
+.m{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.m .av{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:28px;color:#fff;background:linear-gradient(135deg,var(--rose),var(--plum2))}
+.m h3{font-size:26px;color:var(--plum)}
+.m q{font-size:14px;color:var(--mute);font-style:italic}
+@media(max-width:960px){.masters{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.masters{grid-template-columns:1fr}}
+
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+.gal figure{border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:var(--nude)}
+.gal img{width:100%;height:100%;object-fit:cover}
+@media(max-width:700px){.gal{grid-template-columns:1fr 1fr}.gal figure:last-child{display:none}}
+
+.rv-top{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap}
+.score{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px 18px}
+.score b{font-family:"Cormorant Garamond",serif;font-size:44px;color:var(--plum);line-height:1}
+.score small{display:block;font-size:13px;color:var(--mute)}
+.rv{columns:3 290px;column-gap:16px;margin-top:30px}
+.rv blockquote{break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;margin-bottom:16px}
+.rv blockquote p{font-size:15px}
+.rv cite{display:block;margin-top:12px;font-style:normal;font-weight:600;font-size:14px;color:var(--plum)}
+.rv cite span{color:var(--gold);margin-left:6px}
+
+.ct{background:linear-gradient(135deg,var(--blush),var(--nude));border-radius:36px;padding:46px;display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.ct>*{min-width:0}
+.ct dl{display:grid;gap:14px;margin-top:20px}
+.ct dt{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}
+.ct dd{font-size:16px}
+.links{display:grid;gap:10px;align-content:start}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;border-radius:16px;padding:16px 18px;text-decoration:none;font-weight:600}
+.links a:hover{background:var(--plum);color:#fff}
+.links small{font-weight:500;color:var(--mute)}
+.links a:hover small{color:#e3c9d4}
+@media(max-width:860px){.ct{grid-template-columns:1fr;padding:28px 20px;border-radius:26px}}
+@media(max-width:480px){.hero h1{font-size:44px}h2{font-size:32px}.btn{width:100%}}
+
+footer{padding:28px 0 100px;text-align:center;color:var(--mute);font-size:13px}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;text-decoration:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
+.fab .wa{background:#25d366}.fab .tg{background:#2aa3e0}.fab .ph{background:var(--plum)}
+.fab svg{width:26px;height:26px;fill:#fff}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версия сайта. Услуги, прайс, отзывы и фото взяты из открытой карточки «Пилка-ми» в 2ГИС.</div>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top">Пилка<i>-ми</i></a>
+    <nav class="nav"><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#masters">Мастера</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+    <a class="hd-btn" href="https://wa.me/79625653762" target="_blank" rel="noopener">Записаться</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="over">Ногтевая студия · Елабуга</span>
+      <h1>Аккуратный маникюр <i>и время для себя</i></h1>
+      <p>Маникюр, педикюр, наращивание, брови и ресницы на проспекте Мира. Нежная студия, внимательные мастера и доступный прайс.</p>
+      <div class="btns">
+        <a class="btn btn-main" href="https://wa.me/79625653762" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+        <a class="btn btn-line" href="#price">Смотреть прайс</a>
+      </div>
+      <div class="facts">
+        <div><b>4.9</b><span>63 оценки в 2ГИС</span></div>
+        <div><b>5</b><span>мастеров в отзывах</span></div>
+        <div><b>от 1 000 ₽</b><span>маникюр</span></div>
+      </div>
+    </div>
+    <div class="arch">
+      <div class="frame"><img src="https://i4.photo.2gis.com/photo-gallery/ac682168-2648-414c-b19a-ab88cd1a8e6d_640x.jpg" alt="Работа студии Пилка-ми"></div>
+      <div class="hours"><b>Ежедневно 09:00–20:00</b>по предварительной записи</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <span class="over">Услуги</span>
+    <h2>Всё для рук, ног <i>и взгляда</i></h2>
+    <div class="svc">
+      <div><h3>Маникюр</h3><p>Аппаратный, японский, немецкий, гигиенический, мужской. Гель-лак и камуфляж.</p></div>
+      <div><h3>Педикюр</h3><p>Женский и мужской, пальчики или полный, с покрытием и без.</p></div>
+      <div><h3>Наращивание</h3><p>Гелем и акрилом, длина медиум и макси. Укрепление и ремонт.</p></div>
+      <div><h3>Уход</h3><p>Парафиновые ванночки, ламинирование ногтей, обработка стоп.</p></div>
+      <div><h3>Брови</h3><p>Коррекция, окрашивание, долговременная укладка, ботокс.</p></div>
+      <div><h3>Ресницы</h3><p>Ламинирование и окрашивание, ботокс, снятие нарощенных.</p></div>
+      <div><h3>Дизайн</h3><p>Втирка, френч и дизайн ногтей.</p></div>
+      <div><h3>Солярий</h3><p>Поминутно или абонементом на 50 и 100 минут.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="price" id="price">
+  <div class="wrap">
+    <span class="over" style="color:var(--gold)">Прайс</span>
+    <h2>Честные цены</h2>
+    <p class="lead">Цены из 2ГИС. Точную стоимость под ваш дизайн подскажет мастер.</p>
+    <div class="tabs" role="tablist">
+      <button class="on" data-t="man">Маникюр</button><button data-t="ped">Педикюр</button><button data-t="brow">Брови</button><button data-t="lash">Ресницы</button><button data-t="sol">Солярий</button>
+    </div>
+    <div class="plist on" id="man">
+      <div class="row"><span>Гигиенический маникюр</span><b>1 000 ₽</b></div>
+      <div class="row"><span>Японский маникюр</span><b>1 200 ₽</b></div>
+      <div class="row"><span>Немецкий маникюр</span><b>1 500 ₽</b></div>
+      <div class="row"><span>Гигиенический маникюр мужской</span><b>1 200 ₽</b></div>
+      <div class="row"><span>Покрытие базой-камуфляж</span><b>1 700 ₽</b></div>
+      <div class="row"><span>Покрытие гелем</span><b>2 000 ₽</b></div>
+      <div class="row"><span>Покрытие гель-лаком</span><b>2 200 ₽</b></div>
+      <div class="row"><span>Ламинирование ногтей</span><b>2 000 ₽</b></div>
+      <div class="row"><span>Наращивание, длина медиум</span><b>2 500 ₽</b></div>
+      <div class="row"><span>Наращивание, длина макси</span><b>2 700 ₽</b></div>
+      <div class="row"><span>Укрепление гелем</span><b>200 ₽</b></div>
+      <div class="row"><span>Втирка / френч</span><b>300 ₽</b></div>
+      <div class="row"><span>Дизайн</span><b>от 50 ₽</b></div>
+      <div class="row"><span>Ремонт</span><b>от 100 ₽</b></div>
+      <div class="row"><span>Снятие</span><b>400 ₽</b></div>
+    </div>
+    <div class="plist" id="ped">
+      <div class="row"><span>Гигиенический педикюр, пальчики</span><b>1 700 ₽</b></div>
+      <div class="row"><span>Гигиенический педикюр, полный</span><b>2 000 ₽</b></div>
+      <div class="row"><span>Немецкий педикюр, пальчики</span><b>2 000 ₽</b></div>
+      <div class="row"><span>Немецкий педикюр, полный</span><b>2 200 ₽</b></div>
+      <div class="row"><span>Педикюр пальчики с покрытием</span><b>2 000 ₽</b></div>
+      <div class="row"><span>Полный педикюр с покрытием</span><b>2 500 ₽</b></div>
+      <div class="row"><span>Обработка стоп</span><b>1 000 ₽</b></div>
+    </div>
+    <div class="plist" id="brow">
+      <div class="row"><span>Коррекция бровей</span><b>700 ₽</b></div>
+      <div class="row"><span>Окрашивание бровей</span><b>1 000 ₽</b></div>
+      <div class="row"><span>Долговременная укладка</span><b>1 100 ₽</b></div>
+      <div class="row"><span>Коррекция + окрашивание</span><b>1 500 ₽</b></div>
+      <div class="row"><span>Долговременная укладка + окрашивание</span><b>1 500 ₽</b></div>
+      <div class="row"><span>Долговременная укладка + коррекция</span><b>1 500 ₽</b></div>
+      <div class="row"><span>Коррекция + окрашивание + ботокс</span><b>1 600 ₽</b></div>
+      <div class="row"><span>Коррекция + окрашивание + укладка</span><b>2 000 ₽</b></div>
+      <div class="row"><span>Пушок + усики</span><b>400 ₽</b></div>
+    </div>
+    <div class="plist" id="lash">
+      <div class="row"><span>Ламинирование + окрашивание</span><b>2 000 ₽</b></div>
+      <div class="row"><span>Ламинирование + окрашивание + ботокс</span><b>2 000 ₽</b></div>
+      <div class="row"><span>Снятие нарощенных ресниц</span><b>500 ₽</b></div>
+    </div>
+    <div class="plist" id="sol">
+      <div class="row"><span>1 минута</span><b>30 ₽</b></div>
+      <div class="row"><span>Абонемент 50 минут</span><b>1 250 ₽</b></div>
+      <div class="row"><span>Абонемент 100 минут</span><b>2 500 ₽</b></div>
+      <div class="row"><span>Крем</span><b>150 ₽</b></div>
+      <div class="row"><span>Тапочки</span><b>50 ₽</b></div>
+      <div class="row"><span>Шапочка / стикини</span><b>10 ₽</b></div>
+    </div>
+    <p class="pnote">Информация о ценах не является публичной офертой.</p>
+  </div>
+</section>
+
+<section id="masters">
+  <div class="wrap">
+    <span class="over">Мастера</span>
+    <h2>К кому <i>возвращаются</i></h2>
+    <p class="lead">Имена мастеров и слова клиентов из отзывов в 2ГИС.</p>
+    <div class="masters">
+      <div class="m"><div class="av">Ю</div><h3>Юлия</h3><q>Все проходит комфортно, быстро и качественно.</q></div>
+      <div class="m"><div class="av">А</div><h3>Альбина</h3><q>Очевиден профессионализм мастерицы Альбины.</q></div>
+      <div class="m"><div class="av">А</div><h3>Анастасия</h3><q>профессионализм, быстроту, аккуратность, одним словом молодец.</q></div>
+      <div class="m"><div class="av">А</div><h3>Алёна</h3><q>Это высший пилотаж!</q></div>
+      <div class="m"><div class="av">А</div><h3>Адиля</h3><q>свою работу выполняет на высшем уровне</q></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <span class="over">Работы</span>
+    <h2>Из нашей студии</h2>
+    <div class="gal">
+      <figure><img loading="lazy" src="https://i7.photo.2gis.com/photo-gallery/d014c88d-1b74-4f24-ad29-2832cf5d3fa7_640x.jpg" alt="Работа мастера"></figure>
+      <figure><img loading="lazy" src="https://i9.photo.2gis.com/photo-gallery/46d10cfa-37a4-4753-b1c6-c7a53c5ad60e_640x.jpg" alt="Работа мастера"></figure>
+      <figure><img loading="lazy" src="https://i4.photo.2gis.com/photo-gallery/ac682168-2648-414c-b19a-ab88cd1a8e6d_640x.jpg" alt="Работа мастера"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="rv-top">
+      <div><span class="over">Отзывы</span><h2>Что говорят <i>клиентки</i></h2></div>
+      <div class="score"><b>4.9</b><div><span style="color:var(--gold)">★★★★★</span><small>63 оценки, 53 отзыва в 2ГИС</small></div></div>
+    </div>
+    <div class="rv">
+      <blockquote><p>«Хожу у мастеру Юлии на маникюр и педикюр. Все проходит комфортно, быстро и качественно. Предлагают напитки и вкусняшки. Снятие, маникюр и покрытие гелем длится чуть больше часа. Цена, на мой взгляд, оправдана.»</p><cite>Юлия Олейник<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Посетила сегодня студию, ПилкаМи. Мастер Алёна, шикарно выполняет свою работу, очень понравилось. Администратор, милая девушка, помогла с записью. сервис на 100%. Приду ещё!!! Сделали мне парафин, запах 🔥🔥🔥»</p><cite>Татьяна Баслакова<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Студия волшебная, отдельное спасибо - мастеру Адиле, свою работу выполняет на высшем уровне, я довольна, приду ещё. Локация студии такая же нежная, как и маникюр с педикюром, а самое главное, доступный прайс!)»</p><cite>Диана Селиванова<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Хожу в данный салон почти год. К Мастеру Альбина! Все очень нравится:обслуживание,сервис,отношение к клиентам. И цена вполне устраивает!»</p><cite>Алия Кузнецова<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Срочно нужен был свежий маникюр, в салоне подобрали подходящее время, все девочки милые и вежливые, атмосфера приятная, работа мастера Анастасии очень понравилась.»</p><cite>Индира<span>★★★★★</span></cite></blockquote>
+      <blockquote><p>«Впервые была сегодня в этом салоне, все очень понравилось. Была у мастера Юлии, сделала маникюр очень аккуратно и красиво!)»</p><cite>Ксения Талипова<span>★★★★★</span></cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" style="padding-top:10px">
+  <div class="wrap">
+    <div class="ct">
+      <div>
+        <h2>Запишитесь <i>на удобное время</i></h2>
+        <dl>
+          <dt>Адрес</dt><dd>Елабуга, проспект Мира, 35/1, 3 этаж</dd>
+          <dt>Время работы</dt><dd>Ежедневно 09:00–20:00, по предварительной записи</dd>
+          <dt>Оплата</dt><dd>Картой, наличными, по QR-коду</dd>
+        </dl>
+      </div>
+      <div class="links">
+        <a href="tel:+79625653762">+7 962 565-37-62 <small>позвонить</small></a>
+        <a href="https://wa.me/79625653762" target="_blank" rel="noopener">WhatsApp <small>записаться</small></a>
+        <a href="https://t.me/pilkami0" target="_blank" rel="noopener">Telegram <small>@pilkami0</small></a>
+        <a href="https://vk.com/id521657404" target="_blank" rel="noopener">ВКонтакте <small>страница студии</small></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Пилка-ми · ногтевая студия · Елабуга</footer>
+
+<div class="fab">
+  <a class="wa" href="https://wa.me/79625653762" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+  <a class="tg" href="https://t.me/pilkami0" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.5 4.3 18.4 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.6 13 2 11.6c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.3 1.1z"/></svg></a>
+  <a class="ph" href="tel:+79625653762" aria-label="Позвонить"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+</div>
+<script>
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.plist').forEach(p=>p.classList.toggle('on',p.id===b.dataset.t));
+}));
+</script>
+</body>
+</html>
