@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Beauty lazer · лазерная эпиляция и косметология</title>
+<meta name="description" content="Beauty lazer: лазерная эпиляция на александритовом лазере, аппаратная и инъекционная косметология. Две студии: Щёлково и Лётчика Ларюшина.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f2ec;--paper:#fffdf9;--ink:#2a1d22;--mut:#76666b;--wine:#7b2d43;--wine2:#5f1f32;--rose:#e9d3d0;--gold:#b48a5a;--line:#e6dbd2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:var(--ink);color:#f3e7e2;font-size:12.5px;text-align:center;padding:7px 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(247,242,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;font-weight:600;letter-spacing:.5px;color:var(--ink);text-decoration:none}
+.logo i{color:var(--wine);font-style:italic}
+nav a{margin-left:22px;font-size:14px;font-weight:500;color:var(--mut);text-decoration:none}
+nav a:hover{color:var(--wine)}
+.btn{display:inline-block;background:var(--wine);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:14px 26px;border-radius:40px;border:0;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--wine2);transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--wine);border:1.5px solid var(--wine)}
+.hero{position:relative;padding:70px 0 64px;overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(38px,6.4vw,66px);line-height:1.04;margin:14px 0 18px}
+h1 em{color:var(--wine);font-style:italic}
+.lead{font-size:18px;color:var(--mut);max-width:520px;margin-bottom:28px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:30px;margin-top:36px;flex-wrap:wrap}
+.stats b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:34px;line-height:1;color:var(--wine)}
+.stats span{font-size:13px;color:var(--mut)}
+.beam{position:relative;aspect-ratio:4/5;border-radius:220px 220px 24px 24px;background:radial-gradient(circle at 50% 30%,#fff 0,#f4e4e0 35%,#e3c4c0 70%,#caa19d 100%);box-shadow:0 30px 60px rgba(123,45,67,.18);overflow:hidden}
+.beam:before{content:"";position:absolute;left:50%;top:-10%;width:2px;height:120%;background:linear-gradient(transparent,rgba(123,45,67,.55),transparent);transform:rotate(18deg);animation:sweep 6s ease-in-out infinite}
+.beam:after{content:"755 нм";position:absolute;right:22px;bottom:22px;font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;color:var(--wine2);background:rgba(255,253,249,.8);padding:6px 14px;border-radius:30px}
+.beam .tag{position:absolute;left:22px;top:44%;background:var(--paper);border-radius:16px;padding:12px 16px;font-size:13px;box-shadow:0 10px 24px rgba(0,0,0,.08);max-width:210px}
+.beam .tag b{display:block;font-size:14px;color:var(--wine)}
+@keyframes sweep{0%,100%{left:30%}50%{left:70%}}
+section{padding:72px 0}
+.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(32px,4.6vw,46px);line-height:1.1;margin-bottom:10px}
+h2 em{color:var(--wine)}
+.sub{color:var(--mut);max-width:620px;margin-bottom:34px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.s{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px;transition:.25s}
+.alt .s{background:var(--bg)}
+.s:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(42,29,34,.08)}
+.s .n{font-family:"Cormorant Garamond",Georgia,serif;font-size:15px;color:var(--gold)}
+.s h3{font-size:19px;margin:6px 0 10px}
+.s ul{list-style:none;font-size:14.5px;color:var(--mut)}
+.s li{padding:5px 0;border-bottom:1px dashed var(--line)}
+.s li:last-child{border:0}
+.s.big{grid-column:span 2;background:linear-gradient(135deg,var(--wine),#9b3f58);color:#fff;border:0}
+.s.big ul{color:#f6e3e7}.s.big li{border-color:rgba(255,255,255,.2)}.s.big .n{color:#f0cfa6}
+.note{font-size:13px;color:var(--mut);margin-top:16px}
+.prep{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:st}
+.p{position:relative;padding:24px 20px 22px;border-radius:20px;background:var(--bg);border:1px solid var(--line)}
+.p:before{counter-increment:st;content:counter(st);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--rose);color:var(--wine);font-weight:700;margin-bottom:12px}
+.p h4{font-size:16px;margin-bottom:6px}.p p{font-size:14px;color:var(--mut)}
+.team{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.m{text-align:center}
+.m .av{width:96px;height:96px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;font-family:"Cormorant Garamond",Georgia,serif;font-size:40px;color:var(--wine);background:radial-gradient(circle at 35% 30%,#fff,var(--rose));border:1px solid var(--line)}
+.m b{display:block}.m span{font-size:13px;color:var(--mut)}
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.r{background:var(--paper);border-radius:22px;padding:28px;border:1px solid var(--line);font-size:15px}
+.r:before{content:"“";display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:64px;line-height:.6;color:var(--wine);margin-bottom:10px}
+.r small{display:block;margin-top:14px;color:var(--gold);font-weight:600}
+.br{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.b{background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:30px}
+.b h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:28px}
+.b .rt{display:inline-block;margin:8px 0 14px;background:var(--rose);color:var(--wine2);font-weight:700;font-size:13px;padding:4px 12px;border-radius:20px}
+.b p{font-size:15px;color:var(--mut);margin:4px 0}
+.b a{color:var(--wine);font-weight:600;text-decoration:none}
+.book{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+form{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:30px;display:grid;gap:14px}
+label{font-size:13px;font-weight:600;color:var(--mut)}
+input,select{width:100%;font:inherit;font-size:15px;padding:13px 14px;border:1px solid var(--line);border-radius:14px;background:var(--bg);color:var(--ink);margin-top:6px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink);font-weight:500}
+.chk input{width:auto;margin-top:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ok{display:none;background:var(--rose);color:var(--wine2);padding:14px;border-radius:14px;font-weight:600;font-size:14px}
+footer{padding:34px 0;font-size:13px;color:var(--mut);text-align:center}
+@media(max-width:900px){.hero .w,.book{grid-template-columns:1fr}.beam{max-width:340px;margin:0 auto}.svc,.rev{grid-template-columns:1fr 1fr}.prep{grid-template-columns:1fr 1fr}.team{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){nav{display:none}.svc,.rev,.br,.prep,.two{grid-template-columns:1fr}.s.big{grid-column:auto}.team{grid-template-columns:1fr 1fr}.hero{padding:44px 0}section{padding:54px 0}.stats{gap:22px}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версия сайта для Beauty lazer. Тексты и фото заменим на ваши</div>
+<header><div class="w">
+<a class="logo" href="#">Beauty <i>lazer</i></a>
+<nav><a href="#services">Услуги</a><a href="#prep">Подготовка</a><a href="#team">Мастера</a><a href="#studios">Студии</a></nav>
+<a class="btn" href="#book" style="padding:10px 20px;font-size:14px">Записаться</a>
+</div></header>
+
+<section class="hero"><div class="w">
+<div>
+<div class="kicker">Студия косметологии · две студии</div>
+<h1>Гладкая кожа <em>без лишних</em> сеансов</h1>
+<p class="lead">Лазерная эпиляция на александритовом лазере, аппаратная и инъекционная косметология. Принимаем по записи каждый день до 22:00.</p>
+<div class="row"><a class="btn" href="#book">Записаться онлайн</a><a class="btn o" href="#prep">Как подготовиться</a></div>
+<div class="stats">
+<div><b>5,0</b><span>Щёлково, 28 отзывов в 2ГИС</span></div>
+<div><b>4,9</b><span>Ларюшина, 39 отзывов</span></div>
+<div><b>7 дней</b><span>в неделю, до 22:00</span></div>
+</div>
+</div>
+<div class="beam"><div class="tag"><b>Александритовый лазер</b>для лазерной эпиляции лица и тела</div></div>
+</div></section>
+
+<section class="alt" id="services"><div class="w">
+<h2>Услуги <em>студии</em></h2>
+<p class="sub">Всё, что можно сделать в Beauty lazer, собрано по направлениям. У каждой услуги будет своя страница с ценой и описанием.</p>
+<div class="svc">
+<div class="s big"><div class="n">01</div><h3>Эпиляция</h3><ul><li>Лазерная александритовая эпиляция</li><li>Электроэпиляция</li><li>Шугаринг</li><li>Восковая эпиляция</li></ul></div>
+<div class="s"><div class="n">02</div><h3>Косметология</h3><ul><li>Инъекционные процедуры</li><li>Аппаратная косметология</li><li>Лазерная косметология</li></ul></div>
+<div class="s"><div class="n">03</div><h3>Уход за лицом</h3><ul><li>Чистка лица</li><li>Пилинги</li><li>Дерматокосметолог</li></ul></div>
+<div class="s"><div class="n">04</div><h3>Удаление</h3><ul><li>Татуировок</li><li>Перманентного макияжа</li><li>Новообразований</li></ul></div>
+<div class="s"><div class="n">05</div><h3>Массаж</h3><ul><li>Аппаратный</li><li>Оздоровительный</li><li>Релаксирующий</li><li>Спортивный</li></ul></div>
+</div>
+<p class="note">Цены в демо не указаны: добавим из вашего прайса.</p>
+</div></section>
+
+<section id="prep"><div class="w">
+<h2>Первый раз <em>на лазер?</em></h2>
+<p class="sub">Клиенты в отзывах просят памятку заранее, чтобы не узнавать нюансы уже на процедуре. На сайте она будет всегда под рукой, а после записи придёт в сообщении.</p>
+<div class="prep">
+<div class="p"><h4>Консультация</h4><p>Мастер смотрит кожу и волосы, подбирает режим и отвечает на вопросы.</p></div>
+<div class="p"><h4>Подготовка</h4><p>Как и когда побрить зону, чего избегать перед сеансом. Текст памятки напишет ваш мастер.</p></div>
+<div class="p"><h4>Процедура</h4><p>Пришли к назначенному времени, без ожидания. Чай или кофе, пока готовят кабинет.</p></div>
+<div class="p"><h4>Следующий сеанс</h4><p>Сайт сам напомнит, когда пора записаться снова.</p></div>
+</div>
+</div></section>
+
+<section class="alt" id="team"><div class="w">
+<h2>Мастера, <em>к которым возвращаются</em></h2>
+<p class="sub">Эти имена клиенты называют в отзывах. Здесь будут фото, опыт и направления каждого мастера.</p>
+<div class="team">
+<div class="m"><div class="av">Л</div><b>Лана</b><span>лазерная эпиляция</span></div>
+<div class="m"><div class="av">С</div><b>Сирануш</b><span>александритовый лазер</span></div>
+<div class="m"><div class="av">К</div><b>Ксения</b><span>лазерная эпиляция</span></div>
+<div class="m"><div class="av">Е</div><b>Екатерина</b><span>александритовый лазер</span></div>
+<div class="m"><div class="av">И</div><b>Ирина Викторовна</b><span>лазерная эпиляция</span></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>Отзывы <em>из 2ГИС</em></h2>
+<p class="sub">Реальные отзывы клиентов, без правок.</p>
+<div class="rev">
+<div class="r">Я уже несколько лет хожу сюда, чаще всего на эпиляцию на Александритовом лазере к мастеру Сирануш. Результат меня полностью устраивает - есть зоны, которые уже давно не трогаю.<small>Отзыв, 2ГИС</small></div>
+<div class="r">Была на лазерной эпиляции у мастера Ланы, меня впечатлило не только профессиональное выполнение работы, но и исключительное отношение к клиенту.<small>Отзыв, 2ГИС</small></div>
+<div class="r">В студию прихожу только на александритовый лазер для эпиляции. Высоко оцениваю аккуратную работу мастера Екатерины, ведь она очень квалифицированная.<small>Отзыв, 2ГИС</small></div>
+</div>
+</div></section>
+
+<section class="alt" id="studios"><div class="w">
+<h2>Две <em>студии</em></h2>
+<p class="sub">Выберите удобную. Обе работают каждый день по предварительной записи.</p>
+<div class="br">
+<div class="b"><h3>Щёлково</h3><span class="rt">★ 5,0 · 28 отзывов</span><p>Финский микрорайон, 2, 1 этаж</p><p>Ежедневно 09:00–22:00</p><p><a href="tel:+79151679292">+7 915 167-92-92</a></p></div>
+<div class="b"><h3>Лётчика Ларюшина</h3><span class="rt">★ 4,9 · 39 отзывов</span><p>улица Лётчика Ларюшина, 6 к1, 1 этаж</p><p>Ежедневно 09:30–22:00</p><p><a href="tel:+79152475629">+7 915 247-56-29</a></p></div>
+</div>
+<p class="note">Общий номер: <a href="tel:+79851915443" style="color:var(--wine);font-weight:600;text-decoration:none">+7 985 191-54-43</a> · оплата картой, наличными или по QR-коду</p>
+</div></section>
+
+<section id="book"><div class="w book">
+<div>
+<h2>Запись <em>за минуту</em></h2>
+<p class="sub">Клиент выбирает студию, услугу и время сам, даже ночью. Заявка сразу приходит администратору в Telegram или WhatsApp.</p>
+</div>
+<form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block'">
+<div class="two">
+<div><label>Студия<select><option>Щёлково, Финский мкр, 2</option><option>Лётчика Ларюшина, 6 к1</option></select></label></div>
+<div><label>Услуга<select><option>Лазерная эпиляция</option><option>Консультация косметолога</option><option>Чистка лица</option><option>Пилинг</option><option>Инъекционные процедуры</option><option>Массаж</option></select></label></div>
+</div>
+<div class="two">
+<div><label>Имя<input placeholder="Как к вам обращаться"></label></div>
+<div><label>Телефон<input type="tel" placeholder="+7"></label></div>
+</div>
+<label>Удобная дата<input type="date"></label>
+<label class="chk"><input type="checkbox" checked> Прислать памятку по подготовке и напомнить о следующем сеансе</label>
+<button class="btn" type="submit">Отправить заявку</button>
+<div class="ok">Это демо: в рабочей версии заявка придёт администратору.</div>
+</form>
+</div></section>
+
+<footer>Beauty lazer · студия косметологии · демо-версия сайта</footer>
+</body>
+</html>
