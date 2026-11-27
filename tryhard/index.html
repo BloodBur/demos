@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Try Hard Tattoo · тату-студия, Воронеж</title>
+<meta name="description" content="Try Hard Tattoo: тату-студия на Минской, 69в в Воронеже. Мастера, эскизы, запись на сеанс.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#efebe3;--ink:#121212;--mut:#5d5a55;--acid:#c6f432;--red:#e0442e;--line:#121212}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;overflow-x:hidden}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+.demo{background:var(--ink);color:var(--acid);font-size:12.5px;font-weight:600;text-align:center;padding:7px 16px;letter-spacing:.3px}
+header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:2px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Oswald,Impact,"Arial Narrow",sans-serif;font-weight:700;font-size:24px;letter-spacing:1px;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.logo span{background:var(--ink);color:var(--acid);padding:0 6px;margin-left:4px}
+nav a{margin-left:22px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;text-transform:uppercase;letter-spacing:.5px}
+nav a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--ink);color:var(--acid);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.6px;text-decoration:none;padding:16px 28px;border:2px solid var(--ink);cursor:pointer;transition:.15s;box-shadow:5px 5px 0 var(--red)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--red)}
+.btn.o{background:transparent;color:var(--ink);box-shadow:none}
+.hero{padding:64px 0 0;border-bottom:2px solid var(--line);overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:end}
+.tag{display:inline-block;background:var(--acid);border:2px solid var(--ink);font-weight:700;font-size:13px;padding:5px 12px;text-transform:uppercase;letter-spacing:.5px}
+h1{font-family:Oswald,Impact,"Arial Narrow",sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(56px,11vw,140px);line-height:.88;letter-spacing:-1px;margin:22px 0 18px}
+h1 em{font-style:normal;-webkit-text-stroke:2px var(--ink);color:transparent}
+.lead{font-size:18px;color:var(--mut);max-width:520px;margin-bottom:28px}
+.row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px}
+.card{background:var(--ink);color:var(--paper);padding:26px;border:2px solid var(--ink);margin-bottom:-2px}
+.card .big{font-family:Oswald,Impact,sans-serif;font-size:64px;line-height:1;color:var(--acid)}
+.card p{font-size:14px;opacity:.85;margin-top:6px}
+.card hr{border:0;border-top:1px solid rgba(239,235,227,.2);margin:18px 0}
+.ticker{background:var(--acid);border-bottom:2px solid var(--line);overflow:hidden;white-space:nowrap}
+.ticker div{display:inline-block;padding:12px 0;font-family:Oswald,Impact,sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:1px;animation:run 26s linear infinite}
+@keyframes run{to{transform:translateX(-50%)}}
+section{padding:80px 0;border-bottom:2px solid var(--line)}
+h2{font-family:Oswald,Impact,"Arial Narrow",sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(36px,6vw,64px);line-height:.95;margin-bottom:14px}
+.sub{color:var(--mut);max-width:620px;margin-bottom:38px}
+.team{display:grid;grid-template-columns:repeat(4,1fr);border:2px solid var(--line)}
+.m{padding:24px;border-right:2px solid var(--line);position:relative;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}
+.m:last-child{border-right:0}
+.m:hover{background:var(--ink);color:var(--paper)}
+.m:hover .q{color:var(--acid)}
+.m .n{font-family:Oswald,Impact,sans-serif;font-size:14px;letter-spacing:1px;color:var(--red)}
+.m h3{font-family:Oswald,Impact,sans-serif;font-size:36px;text-transform:uppercase;line-height:1}
+.m .q{font-size:14px;color:var(--mut);margin-top:10px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.s{border:2px solid var(--line);padding:26px;background:#fff;box-shadow:6px 6px 0 var(--ink)}
+.s b{font-family:Oswald,Impact,sans-serif;font-size:48px;line-height:1;display:block;color:var(--red)}
+.s h3{font-size:19px;margin:10px 0 6px;text-transform:uppercase}
+.s p{font-size:14.5px;color:var(--mut)}
+.dark{background:var(--ink);color:var(--paper)}
+.dark .sub{color:#a9a49b}
+.rev{columns:3;column-gap:20px}
+.r{break-inside:avoid;border:1px solid rgba(239,235,227,.25);padding:22px;margin-bottom:20px;font-size:15px}
+.r small{display:block;margin-top:12px;color:var(--acid);font-weight:600;text-transform:uppercase;font-size:12px;letter-spacing:.6px}
+.book{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
+form{border:2px solid var(--line);background:#fff;padding:28px;display:grid;gap:14px;box-shadow:8px 8px 0 var(--acid)}
+label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px}
+input,select,textarea{width:100%;font:inherit;font-size:15px;padding:13px 14px;border:2px solid var(--line);background:var(--paper);color:var(--ink);margin-top:6px;border-radius:0}
+textarea{min-height:100px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.drop{border:2px dashed var(--line);padding:18px;text-align:center;font-size:14px;color:var(--mut);background:var(--paper)}
+.ok{display:none;background:var(--acid);border:2px solid var(--ink);padding:14px;font-weight:700;font-size:14px}
+.info{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--line)}
+.i{padding:26px;border-right:2px solid var(--line)}
+.i:last-child{border-right:0}
+.i span{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--red)}
+.i p{font-family:Oswald,Impact,sans-serif;font-size:26px;text-transform:uppercase;line-height:1.15;margin-top:8px}
+.i a{color:var(--ink);text-decoration:none}
+footer{padding:30px 0;text-align:center;font-size:13px;color:var(--mut)}
+@media(max-width:900px){.hero .w,.book{grid-template-columns:1fr}.team{grid-template-columns:1fr 1fr}.m:nth-child(2){border-right:0}.m:nth-child(-n+2){border-bottom:2px solid var(--line)}.steps{grid-template-columns:1fr}.rev{columns:2}.info{grid-template-columns:1fr}.i{border-right:0;border-bottom:2px solid var(--line)}.i:last-child{border-bottom:0}}
+@media(max-width:640px){nav{display:none}.rev{columns:1}.two{grid-template-columns:1fr}.team{grid-template-columns:1fr}.m{border-right:0!important;border-bottom:2px solid var(--line);min-height:auto;gap:14px}.m:last-child{border-bottom:0}section{padding:56px 0}.row{margin-bottom:36px}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версия сайта для Try Hard Tattoo. Фото работ и тексты заменим на ваши</div>
+<header><div class="w">
+<a class="logo" href="#">Try Hard<span>Tattoo</span></a>
+<nav><a href="#team">Мастера</a><a href="#how">Как проходит</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+<a class="btn" href="#book" style="padding:10px 16px;font-size:13px;box-shadow:3px 3px 0 var(--red)">Записаться</a>
+</div></header>
+
+<section class="hero" style="padding-bottom:0"><div class="w">
+<div>
+<span class="tag">Воронеж · Минская, 69в</span>
+<h1>Try <em>Hard</em><br>Tattoo</h1>
+<p class="lead">Тату-студия, где помогут с эскизом, нальют чай и сделают работу, которую не захочется перекрывать.</p>
+<div class="row"><a class="btn" href="#book">Обсудить идею</a><a class="btn o" href="#team">Мастера</a></div>
+</div>
+<div>
+<div class="card"><div class="big">5,0</div><p>рейтинг в 2ГИС, 39 отзывов</p><hr><div class="big" style="font-size:40px">24/7</div><p>работаем по предварительной записи</p></div>
+</div>
+</div></section>
+<div class="ticker"><div>Эскиз под вас ✦ Рукава ✦ Татуировки ✦ Чисто и уютно ✦ Чай, кофе, музыка ✦ Эскиз под вас ✦ Рукава ✦ Татуировки ✦ Чисто и уютно ✦ Чай, кофе, музыка ✦&nbsp;</div></div>
+
+<section id="team"><div class="w">
+<h2>Мастера</h2>
+<p class="sub">Имена, которые клиенты называют в отзывах. Здесь будут фото, стили и портфолио каждого мастера.</p>
+<div class="team">
+<div class="m"><div class="n">01</div><div><h3>Валерия</h3><div class="q">«Сделала всё намного лучше, чем ожидал»</div></div></div>
+<div class="m"><div class="n">02</div><div><h3>Вероника</h3><div class="q">«Подобрала эскиз, сделала всё быстро и безболезненно»</div></div></div>
+<div class="m"><div class="n">03</div><div><h3>Дарья</h3><div class="q">«Моя мечта осуществилась»</div></div></div>
+<div class="m"><div class="n">04</div><div><h3>Рома</h3><div class="q">«Мастер Рома лучший»</div></div></div>
+</div>
+</div></section>
+
+<section id="how"><div class="w">
+<h2>Как проходит</h2>
+<p class="sub">Три шага от идеи до готовой татуировки.</p>
+<div class="steps">
+<div class="s"><b>01</b><h3>Идея и эскиз</h3><p>Присылаете референс или просто описываете идею. Мастер помогает доработать эскиз под вас.</p></div>
+<div class="s"><b>02</b><h3>Сеанс</h3><p>Приходите к своему времени. Чисто, уютно, чай, кофе и музыка, как пишут клиенты.</p></div>
+<div class="s"><b>03</b><h3>Уход</h3><p>Мастер даёт рекомендации по заживлению. На сайте будет памятка, которую можно открыть в любой момент.</p></div>
+</div>
+</div></section>
+
+<section class="dark" id="reviews"><div class="w">
+<h2>Отзывы</h2>
+<p class="sub">Реальные отзывы из 2ГИС, без правок.</p>
+<div class="rev">
+<div class="r">Хочу оставить прекрасный отзыв на это замечательное место. Это реально исполнение желаний. Валерия просто шикарный мастер. Сделала всё намного лучше, чем ожидал. Очень чисто, самое главное в салоне.<small>Отзыв, 2ГИС</small></div>
+<div class="r">Студия чистенькая и уютная, чай, кофе, музычка, все как положено. Мастер умничка, с эскизом помогла, рекомендации дала, тату набила.<small>Отзыв, 2ГИС</small></div>
+<div class="r">Огромное спасибо мастеру Дарье, моя мечта осуществилась. Да, мне 55, это просто супер, быстро, безболезненно.<small>Отзыв, 2ГИС</small></div>
+<div class="r">Шикарно! Подобрали эскиз, сделали работу быстро и качественно! К слову, ценник совсем не кусается.<small>Отзыв, 2ГИС</small></div>
+<div class="r">Работают классные, веселые ребята. Получилось быстро записаться, результатом осталась довольна. Чувствую, что скоро приеду за второй татухой)) Мастер Рома - лучший)<small>Отзыв, 2ГИС</small></div>
+<div class="r">Был у Валерии на сеансе, делали рукав, благодарю за работу!<small>Отзыв, 2ГИС</small></div>
+</div>
+</div></section>
+
+<section id="book"><div class="w book">
+<div><h2>Опишите идею</h2><p class="sub">Заявка с описанием и референсом сразу придёт мастеру в Telegram. Он ответит, сколько займёт работа и когда можно записаться.</p></div>
+<form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block'">
+<label>Что хотите набить<textarea placeholder="Идея, стиль, надпись, перекрытие старой тату..."></textarea></label>
+<div class="two">
+<div><label>Место на теле<select><option>Рука</option><option>Рукав</option><option>Нога</option><option>Спина</option><option>Грудь</option><option>Другое</option></select></label></div>
+<div><label>Примерный размер<select><option>до 5 см</option><option>5–10 см</option><option>10–20 см</option><option>больше 20 см</option></select></label></div>
+</div>
+<div class="drop">Сюда можно прикрепить референс или фото места</div>
+<div class="two">
+<div><label>Имя<input placeholder="Как к вам обращаться"></label></div>
+<div><label>Telegram или телефон<input placeholder="@ник или +7"></label></div>
+</div>
+<button class="btn" type="submit">Отправить мастеру</button>
+<div class="ok">Это демо: в рабочей версии заявка придёт мастеру.</div>
+</form>
+</div></section>
+
+<section id="contacts" style="border-bottom:0"><div class="w">
+<h2>Контакты</h2>
+<div class="info">
+<div class="i"><span>Адрес</span><p>Воронеж,<br>Минская, 69в</p></div>
+<div class="i"><span>Режим</span><p>Круглосуточно<br>по записи</p></div>
+<div class="i"><span>Связь</span><p><a href="tel:+79601313951">+7 960 131-39-51</a><br><a href="https://t.me/tryhardtattoo">Telegram</a></p></div>
+</div>
+</div></section>
+<footer>Try Hard Tattoo · Воронеж · демо-версия сайта</footer>
+</body>
+</html>
