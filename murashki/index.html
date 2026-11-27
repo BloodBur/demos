@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Murashki · танцевальная студия, Саратов</title>
+<meta name="description" content="Murashki: танцы для детей и взрослых на Лунной, 41а. Контемп, хип-хоп, акробатика, high heels, зумба, стретчинг.">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#141016;--bg2:#1d1720;--ink:#fff7f3;--mut:#bdaeb6;--hot:#ff5a5f;--sun:#ffc24b;--lil:#b69cff;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Onest,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+.demo{background:var(--sun);color:#1b1410;font-size:12.5px;font-weight:600;text-align:center;padding:7px 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(20,16,22,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Unbounded,"Arial Black",sans-serif;font-weight:800;font-size:22px;letter-spacing:.5px;color:var(--ink);text-decoration:none}
+.logo span{color:var(--hot)}
+nav a{margin-left:22px;font-size:14px;color:var(--mut);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--hot);color:#fff;font-weight:700;font-size:15px;text-decoration:none;padding:15px 28px;border-radius:14px;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,90,95,.35)}
+.btn.o{background:transparent;border:1.5px solid var(--line);color:var(--ink)}
+.hero{position:relative;padding:76px 0 70px;overflow:hidden}
+.dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.09) 1.4px,transparent 1.6px);background-size:22px 22px;mask-image:linear-gradient(120deg,transparent 30%,#000 75%);-webkit-mask-image:linear-gradient(120deg,transparent 30%,#000 75%)}
+.hero .w{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;font-size:13px;font-weight:600;background:var(--bg2);border:1px solid var(--line);padding:7px 14px;border-radius:30px;color:var(--mut)}
+.pill b{color:var(--sun)}
+h1{font-family:Unbounded,"Arial Black",sans-serif;font-weight:800;font-size:clamp(38px,7vw,78px);line-height:1;margin:22px 0 20px;letter-spacing:-1px}
+h1 .h{color:var(--hot)}
+h1 .s{display:block;font-size:.42em;font-weight:500;letter-spacing:0;color:var(--mut);margin-top:14px;line-height:1.25}
+.lead{font-size:18px;color:var(--mut);max-width:520px;margin-bottom:28px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.stack{display:grid;gap:14px}
+.tile{border-radius:22px;padding:22px 22px 20px;position:relative;overflow:hidden}
+.tile b{font-family:Unbounded,"Arial Black",sans-serif;font-size:20px;display:block}
+.tile span{font-size:14px;opacity:.85}
+.t1{background:var(--hot);transform:rotate(-2deg)}
+.t2{background:var(--lil);color:#19121f;transform:rotate(1.5deg) translateX(18px)}
+.t3{background:var(--sun);color:#1b1410;transform:rotate(-1deg)}
+section{padding:76px 0}
+.alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-family:Unbounded,"Arial Black",sans-serif;font-weight:700;font-size:clamp(28px,4.4vw,44px);line-height:1.1;margin-bottom:12px}
+h2 i{font-style:normal;color:var(--hot)}
+.sub{color:var(--mut);max-width:620px;margin-bottom:36px}
+.tabs{display:inline-flex;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:5px;margin-bottom:26px}
+.tabs button{font:inherit;font-weight:600;font-size:15px;color:var(--mut);background:none;border:0;padding:10px 20px;border-radius:10px;cursor:pointer}
+.tabs button.on{background:var(--hot);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.d{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:24px;transition:.25s}
+.d:hover{transform:translateY(-4px);border-color:rgba(255,90,95,.5)}
+.d .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+.d h3{font-size:18px;margin-bottom:6px}
+.d p{font-size:14px;color:var(--mut)}
+.panel{display:none}.panel.on{display:block}
+.combo{margin-top:18px;padding:20px 22px;border-radius:18px;background:linear-gradient(90deg,rgba(255,90,95,.18),rgba(182,156,255,.12));border:1px solid var(--line);font-size:15px}
+.combo b{color:var(--sun)}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.y{padding:26px;border-radius:22px;border:1px solid var(--line);background:var(--bg2)}
+.y .n{font-family:Unbounded,"Arial Black",sans-serif;font-size:34px;color:var(--hot);line-height:1}
+.y h3{margin:12px 0 6px;font-size:18px}.y p{font-size:14.5px;color:var(--mut)}
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.r{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:26px;font-size:15px}
+.r .st{color:var(--sun);letter-spacing:2px;margin-bottom:10px}
+.r small{display:block;margin-top:12px;color:var(--mut)}
+.sched{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.box{background:var(--bg2);border:1px solid var(--line);border-radius:22px;padding:28px}
+.box h3{font-family:Unbounded,"Arial Black",sans-serif;font-size:20px;margin-bottom:14px}
+.hrs{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:15px}
+.hrs span{color:var(--mut)}
+.box p{color:var(--mut);margin:6px 0;font-size:15px}
+.box a{color:var(--ink);font-weight:600;text-decoration:none}
+.price{margin-top:14px;padding:12px 14px;border-radius:12px;border:1px dashed rgba(255,194,75,.5);color:var(--sun);font-size:14px}
+form{background:var(--bg2);border:1px solid var(--line);border-radius:24px;padding:30px;display:grid;gap:14px}
+label{font-size:13px;font-weight:600;color:var(--mut)}
+input,select{width:100%;font:inherit;font-size:15px;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);margin-top:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.book{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.ok{display:none;background:rgba(255,194,75,.15);color:var(--sun);padding:14px;border-radius:12px;font-weight:600;font-size:14px}
+footer{padding:34px 0;text-align:center;color:var(--mut);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:900px){.hero .w,.book{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.why,.rev{grid-template-columns:1fr}.t2{transform:rotate(1.5deg)}}
+@media(max-width:640px){nav{display:none}.grid,.sched,.two{grid-template-columns:1fr}.hero{padding:48px 0}section{padding:56px 0}.tabs{display:flex}.tabs button{flex:1;padding:10px 8px}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версия сайта для Murashki. Фото и тексты заменим на ваши</div>
+<header><div class="w">
+<a class="logo" href="#">MURA<span>SHKI</span></a>
+<nav><a href="#dirs">Направления</a><a href="#why">Почему мы</a><a href="#reviews">Отзывы</a><a href="#time">Расписание</a></nav>
+<a class="btn" href="#book" style="padding:10px 18px;font-size:14px">Записаться</a>
+</div></header>
+
+<section class="hero"><div class="dots"></div><div class="w">
+<div>
+<span class="pill"><b>★ 5,0</b> в 2ГИС · Лунная, 41а</span>
+<h1>Танцы <span class="h">до мурашек</span><span class="s">для детей и взрослых в Саратове</span></h1>
+<p class="lead">Контемп, хип-хоп и акробатика для детей. High heels, зумба, стретчинг и «Здоровая спина» для взрослых. По выходным art-вечера.</p>
+<div class="row"><a class="btn" href="#book">Записаться на занятие</a><a class="btn o" href="#dirs">Направления</a></div>
+</div>
+<div class="stack">
+<div class="tile t1"><b>Дети</b><span>контемп · хип-хоп · акробатика</span></div>
+<div class="tile t2"><b>Взрослые</b><span>high heels · зумба · стретчинг</span></div>
+<div class="tile t3"><b>Art-вечера</b><span>по выходным</span></div>
+</div>
+</div></section>
+
+<section class="alt" id="dirs"><div class="w">
+<h2>Наши <i>направления</i></h2>
+<p class="sub">Выберите, для кого ищете занятия. Здесь будет описание, возраст и цена абонемента для каждого направления.</p>
+<div class="tabs"><button class="on" onclick="sw(0,this)">Детям</button><button onclick="sw(1,this)">Взрослым</button></div>
+<div class="panel on">
+<div class="grid">
+<div class="d"><div class="ic" style="background:rgba(255,90,95,.18)">🌀</div><h3>Контемп</h3><p>Современный танец: пластика, импровизация, постановки.</p></div>
+<div class="d"><div class="ic" style="background:rgba(182,156,255,.18)">🎧</div><h3>Хип-хоп</h3><p>Энергия, ритм, уверенность в себе.</p></div>
+<div class="d"><div class="ic" style="background:rgba(255,194,75,.18)">🤸</div><h3>Акробатика</h3><p>Сила, гибкость и трюки под присмотром тренера.</p></div>
+<div class="d"><div class="ic" style="background:rgba(255,255,255,.08)">🏆</div><h3>Конкурсы</h3><p>Постановки и выезды на конкурсы всем коллективом.</p></div>
+</div>
+<div class="combo">Родители в отзывах отмечают, что дети изучают <b>три направления одновременно</b>: контемп, хип-хоп и акробатику.</div>
+</div>
+<div class="panel">
+<div class="grid">
+<div class="d"><div class="ic" style="background:rgba(255,90,95,.18)">👠</div><h3>High heels</h3><p>Женственная хореография на каблуках.</p></div>
+<div class="d"><div class="ic" style="background:rgba(255,194,75,.18)">🔥</div><h3>Зумба</h3><p>Кардио под музыку, весело и без подготовки.</p></div>
+<div class="d"><div class="ic" style="background:rgba(182,156,255,.18)">🧘</div><h3>Стретчинг</h3><p>Растяжка и гибкость в спокойном темпе.</p></div>
+<div class="d"><div class="ic" style="background:rgba(255,255,255,.08)">💜</div><h3>Здоровая спина</h3><p>Занятия для осанки и самочувствия.</p></div>
+</div>
+</div>
+</div></section>
+
+<section id="why"><div class="w">
+<h2>Почему <i>Murashki</i></h2>
+<p class="sub">Это пишут сами ученики и родители.</p>
+<div class="why">
+<div class="y"><div class="n">01</div><h3>Тренеры с душой</h3><p>Молодые и современные, «видно, что болеют за своё дело».</p></div>
+<div class="y"><div class="n">02</div><h3>Для всей семьи</h3><p>Дети танцуют, мамы ходят на стретчинг и «Здоровую спину».</p></div>
+<div class="y"><div class="n">03</div><h3>Рядом с домом</h3><p>Удобное расположение в микрорайоне, на Лунной улице.</p></div>
+</div>
+</div></section>
+
+<section class="alt" id="reviews"><div class="w">
+<h2>Отзывы <i>из 2ГИС</i></h2>
+<p class="sub">5,0 из 5. Реальные отзывы без правок.</p>
+<div class="rev">
+<div class="r"><div class="st">★★★★★</div>Мурашки- лучшие! Отличная студия для детей и взрослых! Дочка ходит на танцы, тренеры с душой, видно, что болеют за свое дело, танцы современные.<small>Отзыв, 2ГИС</small></div>
+<div class="r"><div class="st">★★★★★</div>Тренера молодые, современные, которые дают очень интенсивную нагрузку детям. 3 направления дети изучают одновременно - контемп, хип хоп и акробатика!<small>Отзыв, 2ГИС</small></div>
+<div class="r"><div class="st">★★★★★</div>Новый современный подход к взрослым тренировкам. «Здоровая спина» и «stretching» это про любовь к себе, здоровье и красоту!<small>Отзыв, 2ГИС</small></div>
+</div>
+</div></section>
+
+<section id="time"><div class="w">
+<h2>Когда <i>и где</i></h2>
+<p class="sub">Занятия по предварительной записи. Подробное расписание групп появится здесь.</p>
+<div class="sched">
+<div class="box"><h3>Часы работы</h3>
+<div class="hrs"><span>Пн–Пт</span><b>17:30–21:00</b><span>Сб–Вс</span><b>10:00–21:00</b></div>
+<div class="price">Цены абонементов добавим из вашего прайса</div>
+</div>
+<div class="box"><h3>Контакты</h3>
+<p>Саратов, Лунная улица, 41а</p>
+<p><a href="tel:+79379610576">+7 937 961-05-76</a></p>
+<p><a href="tel:+79033856487">+7 903 385-64-87</a></p>
+<p>Оплата наличными или переводом</p>
+</div>
+</div>
+</div></section>
+
+<section class="alt" id="book"><div class="w book">
+<div><h2>Запишитесь <i>на занятие</i></h2><p class="sub">Заявка сразу придёт администратору в WhatsApp или Telegram, он перезвонит и подберёт группу.</p></div>
+<form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block'">
+<div class="two">
+<div><label>Для кого<select><option>Для ребёнка</option><option>Для себя</option></select></label></div>
+<div><label>Направление<select><option>Контемп</option><option>Хип-хоп</option><option>Акробатика</option><option>High heels</option><option>Зумба</option><option>Стретчинг</option><option>Здоровая спина</option></select></label></div>
+</div>
+<div class="two">
+<div><label>Имя<input placeholder="Как к вам обращаться"></label></div>
+<div><label>Телефон<input type="tel" placeholder="+7"></label></div>
+</div>
+<label>Возраст ребёнка, если для ребёнка<input placeholder="Например, 7 лет"></label>
+<button class="btn" type="submit">Отправить заявку</button>
+<div class="ok">Это демо: в рабочей версии заявка придёт администратору.</div>
+</form>
+</div></section>
+
+<footer>Murashki · танцевальная студия · Саратов · демо-версия сайта</footer>
+<script>function sw(i,b){document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.panel').forEach((p,k)=>p.classList.toggle('on',k==i))}</script>
+</body>
+</html>
