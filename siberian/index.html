@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Siberian Fashion · модельная школа, Нижневартовск</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d0c0b;--ivory:#f6f1ea;--paper:#fbf8f4;--blush:#e8c9c0;--rose:#b5675a;--gold:#b89a5e;--mute:#6f6760;--line:rgba(13,12,11,.12);--serif:'Bodoni Moda',Georgia,serif;--sans:'Manrope',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.demo{background:var(--ink);color:var(--ivory);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:8px 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(251,248,244,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{font-family:var(--serif);font-size:22px;letter-spacing:.02em;white-space:nowrap}
+.logo i{color:var(--rose)}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px;color:var(--mute)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--ink);color:var(--ivory);padding:13px 24px;border-radius:999px;font-weight:600;font-size:14px;letter-spacing:.02em;border:1px solid var(--ink);cursor:pointer;transition:.25s;font-family:var(--sans)}
+.btn:hover{background:var(--rose);border-color:var(--rose)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ivory)}
+/* hero */
+.hero{position:relative;padding:72px 0 0;overflow:hidden}
+.hero .kick{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);font-weight:600}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(54px,10.5vw,148px);line-height:.92;letter-spacing:-.02em;margin:22px 0 0}
+.hero h1 em{font-style:italic;color:var(--rose)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end;margin-top:40px;padding-bottom:56px;border-bottom:1px solid var(--line)}
+.hero p.lead{font-size:19px;max-width:540px;color:#2b2724}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid var(--line)}
+.stats div{padding:6px 0 6px 20px}
+.stats b{display:block;font-family:var(--serif);font-size:44px;font-weight:500;line-height:1}
+.stats span{font-size:13px;color:var(--mute)}
+.runway{position:absolute;right:-40px;top:40px;font-family:var(--serif);font-style:italic;font-size:280px;line-height:1;color:var(--blush);opacity:.45;z-index:-1;pointer-events:none;user-select:none}
+/* marquee */
+.marq{background:var(--ink);color:var(--ivory);overflow:hidden;white-space:nowrap;padding:18px 0}
+.marq div{display:inline-block;animation:mq 38s linear infinite;font-family:var(--serif);font-size:26px;font-style:italic}
+.marq span{margin:0 28px;color:var(--gold);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:104px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:52px;flex-wrap:wrap}
+.sh .n{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);font-weight:600}
+.sh h2{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5.6vw,72px);line-height:1;letter-spacing:-.015em;margin-top:12px}
+.sh h2 em{font-style:italic}
+.sh p{max-width:420px;color:var(--mute)}
+/* programs */
+.prog{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.pc{padding:30px 24px 34px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);min-height:220px;display:flex;flex-direction:column;transition:.3s}
+.pc:nth-child(4n){border-right:0}
+.pc:hover{background:var(--ivory)}
+.pc .i{font-family:var(--serif);font-size:15px;color:var(--gold)}
+.pc h3{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1.1;margin:18px 0 10px}
+.pc p{font-size:14px;color:var(--mute)}
+.pc.accent{background:var(--ink);color:var(--ivory)}
+.pc.accent p{color:#bdb4aa}
+.pc.accent h3{color:var(--blush)}
+/* stage */
+.stage{background:var(--ivory)}
+.cities{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.cities div{padding:28px 16px;border-right:1px solid var(--line);text-align:center}
+.cities div:last-child{border-right:0}
+.cities b{display:block;font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1}
+.cities span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.cities div.cn b{font-style:italic;color:var(--rose)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.feat article{border-top:2px solid var(--ink);padding-top:22px}
+.feat h4{font-family:var(--serif);font-weight:500;font-size:24px;line-height:1.15;margin-bottom:10px}
+.feat p{font-size:15px;color:#3b3632}
+/* path */
+.path{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px 24px;position:relative}
+.step:before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:56px;line-height:1;color:var(--blush);display:block;margin-bottom:18px}
+.step h4{font-size:17px;font-weight:700;margin-bottom:8px}
+.step p{font-size:14px;color:var(--mute)}
+/* team */
+.team{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:20px}
+.tm{border-radius:24px;padding:30px 26px;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;min-height:260px}
+.tm .mono{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:26px;background:var(--blush);color:var(--ink)}
+.tm h4{font-family:var(--serif);font-weight:500;font-size:26px;line-height:1.1;margin-top:26px}
+.tm span{font-size:13px;color:var(--mute);letter-spacing:.04em}
+.tm.lead{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.tm.lead .mono{background:var(--rose);color:var(--ivory)}
+.tm.lead span{color:#bdb4aa}
+.tm.lead p{font-size:15px;color:#d8cfc5;margin-top:14px}
+/* reviews */
+.rev{background:var(--ink);color:var(--ivory)}
+.rev .sh p{color:#a9a097}
+.rev .sh .n{color:var(--blush)}
+.score{display:flex;align-items:baseline;gap:14px}
+.score b{font-family:var(--serif);font-size:96px;line-height:.9;font-weight:400}
+.score span{color:#a9a097;font-size:14px}
+.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rc{border:1px solid rgba(246,241,234,.16);border-radius:22px;padding:28px 26px;display:flex;flex-direction:column;gap:18px}
+.rc q{font-family:var(--serif);font-size:20px;line-height:1.4;quotes:"«" "»"}
+.rc .st{color:var(--gold);letter-spacing:4px;font-size:14px}
+.rc small{color:#a9a097;font-size:13px}
+/* book */
+.book{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.book h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5.4vw,68px);line-height:1}
+.book h2 em{font-style:italic;color:var(--rose)}
+.book .bl{color:var(--mute);margin-top:18px;max-width:440px}
+.note{margin-top:28px;padding:20px 22px;border-left:3px solid var(--gold);background:var(--ivory);font-size:14px}
+form{background:#fff;border:1px solid var(--line);border-radius:26px;padding:32px;display:grid;gap:16px}
+label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:600;display:grid;gap:8px}
+input,select{font:inherit;font-size:16px;color:var(--ink);padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper);width:100%;letter-spacing:0;text-transform:none;font-weight:400}
+input:focus,select:focus{outline:2px solid var(--blush);border-color:var(--rose)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ok{display:none;background:var(--ivory);padding:14px 16px;border-radius:14px;font-size:14px}
+/* contacts */
+.ct{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.ct div{padding:28px 22px 28px 0;border-right:1px solid var(--line);margin-right:22px}
+.ct div:last-child{border-right:0;margin-right:0}
+.ct h5{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:12px}
+.ct p,.ct a{font-size:16px;display:block}
+.ct a:hover{color:var(--rose)}
+.pay{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
+.pay span{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:6px 14px;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:30px 0;font-size:13px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fab{position:fixed;right:18px;bottom:18px;z-index:30;background:#25d366;color:#fff;border-radius:999px;padding:13px 18px;font-weight:700;font-size:14px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+@media(max-width:980px){
+ .nav ul{display:none}
+ .hero-grid,.book{grid-template-columns:1fr}
+ .prog{grid-template-columns:repeat(2,1fr)}
+ .pc:nth-child(4n){border-right:1px solid var(--line)}.pc:nth-child(2n){border-right:0}
+ .cities{grid-template-columns:repeat(3,1fr)}
+ .cities div:nth-child(3){border-right:0}.cities div:nth-child(-n+3){border-bottom:1px solid var(--line)}
+ .feat,.rg{grid-template-columns:1fr}
+ .path{grid-template-columns:repeat(2,1fr)}
+ .team{grid-template-columns:1fr 1fr}.tm.lead{grid-column:1/-1}
+ .ct{grid-template-columns:1fr 1fr}.ct div:nth-child(2){border-right:0;margin-right:0}
+ .runway{font-size:180px}
+}
+@media(max-width:560px){
+ .wrap{padding:0 16px}
+ section{padding:72px 0}
+ .nav .btn{padding:10px 16px;font-size:13px}
+ .logo{font-size:19px}
+ .stats{grid-template-columns:repeat(3,1fr);border-left:0}
+ .stats div{padding:0 10px 0 0}
+ .stats b{font-size:34px}
+ .prog,.path,.team,.ct{grid-template-columns:1fr}
+ .pc{border-right:0!important;min-height:auto}
+ .cities{grid-template-columns:repeat(2,1fr)}
+ .cities div{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)}
+ .cities div:nth-child(2n){border-right:0!important}
+ .cities div:nth-child(n+5){border-bottom:0}
+ .cities b{font-size:24px}
+ .ct div{border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding:22px 0}
+ .row{grid-template-columns:1fr}
+ form{padding:22px}
+ .score b{font-size:72px}
+ .runway{display:none}
+}
+</style>
+</head>
+<body>
+<div class="demo">Демо-версия сайта · Siberian Fashion</div>
+<header><div class="wrap nav">
+ <a class="logo" href="#">Siberian <i>Fashion</i></a>
+ <ul><li><a href="#programs">Программа</a></li><li><a href="#stage">Показы</a></li><li><a href="#team">Команда</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#contacts">Контакты</a></li></ul>
+ <a class="btn" href="#book">Записаться</a>
+</div></header>
+
+<section class="hero" style="padding-bottom:0">
+ <div class="runway">SF</div>
+ <div class="wrap">
+  <div class="kick">Детская модельная школа-агентство · Нижневартовск</div>
+  <h1>Уверенность,<br>которую <em>видно</em><br>на подиуме</h1>
+  <div class="hero-grid">
+   <div>
+    <p class="lead">Дефиле, фотопозирование, актёрское мастерство и сцена. Дети учатся держаться на публике, работать с фотографом и выходят на показы в Москве, Петербурге и за границей.</p>
+    <div class="cta"><a class="btn" href="#book">Записаться на занятие</a><a class="btn ghost" href="https://wa.me/79222555948">Написать в WhatsApp</a></div>
+   </div>
+   <div class="stats">
+    <div><b>5.0</b><span>рейтинг в 2ГИС</span></div>
+    <div><b>39</b><span>отзывов родителей</span></div>
+    <div><b>6</b><span>городов показов</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="marq"><div>Дефиле<span>✦</span>Фотопозирование<span>✦</span>Актёрское мастерство<span>✦</span>Хореография<span>✦</span>Этикет<span>✦</span>Вокал<span>✦</span>Показы<span>✦</span>Портфолио<span>✦</span>Дефиле<span>✦</span>Фотопозирование<span>✦</span>Актёрское мастерство<span>✦</span>Хореография<span>✦</span>Этикет<span>✦</span>Вокал<span>✦</span>Показы<span>✦</span>Портфолио<span>✦</span></div></div>
+
+<section id="programs"><div class="wrap">
+ <div class="sh"><div><div class="n">01 · Программа</div><h2>Больше, чем <em>походка</em></h2></div><p>Каждое направление работает на одно: ребёнок раскрывается, перестаёт стесняться камеры и учится подавать себя.</p></div>
+ <div class="prog">
+  <div class="pc"><span class="i">I</span><h3>Дефиле</h3><p>Постановка походки, осанка, выход на подиум и работа в общем показе.</p></div>
+  <div class="pc"><span class="i">II</span><h3>Фото&shy;позирование</h3><p>Как стоять в кадре, работать с фотографом и не зажиматься на съёмке.</p></div>
+  <div class="pc"><span class="i">III</span><h3>Актёрское мастерство</h3><p>Эмоции, образ, свобода на сцене и перед камерой.</p></div>
+  <div class="pc"><span class="i">IV</span><h3>Хореография</h3><p>Пластика, чувство тела и красивое движение.</p></div>
+  <div class="pc"><span class="i">V</span><h3>Психология</h3><p>Уверенность в себе, принятие своей внешности, работа в команде.</p></div>
+  <div class="pc"><span class="i">VI</span><h3>Этикет и речь</h3><p>Манеры, поставленная речь и умение держаться на публике.</p></div>
+  <div class="pc"><span class="i">VII</span><h3>Мейкап</h3><p>Основы макияжа для съёмок и показов.</p></div>
+  <div class="pc accent"><span class="i">VIII</span><h3>Вокал Musical soul</h3><p>Дополнительно: голос, дыхание и сценическая подача с Алиной Сергеевной.</p></div>
+ </div>
+</div></section>
+
+<section class="stage" id="stage"><div class="wrap">
+ <div class="sh"><div><div class="n">02 · Сцена</div><h2>Подиумы <em>страны</em> и не только</h2></div><p>Выездные показы — главная практика школы. Дети получают опыт, который не даёт ни один кружок.</p></div>
+ <div class="cities">
+  <div><b>Москва</b><span>показы</span></div>
+  <div><b>Петербург</b><span>Kids Fashion Fest</span></div>
+  <div><b>Тюмень</b><span>показы</span></div>
+  <div><b>Сочи</b><span>показы</span></div>
+  <div><b>Екатеринбург</b><span>показы</span></div>
+  <div class="cn"><b>Китай</b><span>международный показ</span></div>
+ </div>
+ <div class="feat">
+  <article><h4>Открытие показа в Китае</h4><p>Модель Siberian Fashion выбрали открывать показ мод в Китае и сниматься в китайской рекламе.</p></article>
+  <article><h4>Kids Fashion Fest 2024</h4><p>Ученицы школы прошли на показ в Санкт-Петербурге: новые знания, мероприятия и большая сцена.</p></article>
+  <article><h4>Съёмки и портфолио</h4><p>Регулярные фотосессии с фотографом школы, работа с детскими магазинами и дизайнерами. Портфолио растёт с каждым сезоном.</p></article>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="sh"><div><div class="n">03 · Как начать</div><h2>Путь <em>модели</em></h2></div><p>Занятия проходят в выходные, поэтому школа легко встраивается в учебную неделю. В группах занимаются и девочки, и мальчики.</p></div>
+ <div class="path">
+  <div class="step"><h4>Заявка</h4><p>Оставьте телефон, администратор Ольга перезвонит и подберёт группу.</p></div>
+  <div class="step"><h4>Знакомство</h4><p>Приходите в студию на Чапаева, 27: посмотрите занятие и атмосферу.</p></div>
+  <div class="step"><h4>Обучение</h4><p>Дефиле, позирование, актёрское мастерство и съёмки по выходным.</p></div>
+  <div class="step"><h4>Показы</h4><p>Первые выходы на подиум в Нижневартовске и поездки в другие города.</p></div>
+ </div>
+</div></section>
+
+<section id="team" style="padding-top:0"><div class="wrap">
+ <div class="sh"><div><div class="n">04 · Команда</div><h2>Люди, которые <em>ставят</em> показы</h2></div></div>
+ <div class="team">
+  <div class="tm lead"><div class="mono">АН</div><div><h4>Александра Нецветаева</h4><span>Руководитель школы</span><p>Создаёт показы и съёмки, подбирает проекты для каждого ребёнка. Родители в отзывах называют её «ярким и позитивным руководителем».</p></div></div>
+  <div class="tm"><div class="mono">О</div><div><h4>Ольга</h4><span>Администратор</span></div></div>
+  <div class="tm"><div class="mono">С</div><div><h4>Соня</h4><span>Фотограф школы</span></div></div>
+  <div class="tm"><div class="mono">АС</div><div><h4>Алина Сергеевна</h4><span>Вокал · Musical soul</span></div></div>
+ </div>
+</div></section>
+
+<section class="rev" id="reviews"><div class="wrap">
+ <div class="sh"><div><div class="n">05 · Отзывы</div><h2>Что говорят <em>родители</em></h2></div><div class="score"><b>5.0</b><span>39 отзывов<br>в 2ГИС</span></div></div>
+ <div class="rg">
+  <div class="rc"><div class="st">★★★★★</div><q>Ходим в эту модельную школу уже пятый год, и ни разу не пожалели о выборе!</q><small>Отзыв в 2ГИС</small></div>
+  <div class="rc"><div class="st">★★★★★</div><q>Моя дочь за 2 года обучения настолько изменилась, стала увереннее в себе. А сегодня она модель недели.</q><small>Отзыв в 2ГИС</small></div>
+  <div class="rc"><div class="st">★★★★★</div><q>Администратор Ольга всегда очень внимательна к детям, руководитель Александра создаёт невероятные показы.</q><small>Отзыв в 2ГИС</small></div>
+ </div>
+</div></section>
+
+<section id="book"><div class="wrap book">
+ <div>
+  <div class="sh" style="margin-bottom:0"><div><div class="n">06 · Запись</div></div></div>
+  <h2 style="margin-top:12px">Первый шаг <em>на подиум</em></h2>
+  <p class="bl">Оставьте контакты, мы перезвоним, расскажем о группах и пригласим на знакомство со школой.</p>
+  <div class="note">Принимаем по предварительной записи, ежедневно с 09:00 до 22:00.</div>
+ </div>
+ <form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block'">
+  <div class="row">
+   <label>Имя родителя<input required placeholder="Как к вам обращаться"></label>
+   <label>Телефон<input required type="tel" placeholder="+7"></label>
+  </div>
+  <div class="row">
+   <label>Возраст ребёнка<input type="number" min="3" max="18" placeholder="Лет"></label>
+   <label>Направление<select><option>Модельная школа</option><option>Вокал Musical soul</option><option>Пока не знаю</option></select></label>
+  </div>
+  <button class="btn" type="submit">Записаться</button>
+  <div class="ok">Это демо: в рабочей версии заявка придёт администратору.</div>
+ </form>
+</div></section>
+
+<section id="contacts" style="padding-top:0"><div class="wrap">
+ <div class="sh"><div><div class="n">07 · Контакты</div><h2>Ждём <em>в студии</em></h2></div></div>
+ <div class="ct">
+  <div><h5>Адрес</h5><p>ул. Чапаева, 27<br>9 этаж, офис 914<br>Нижневартовск</p></div>
+  <div><h5>Время</h5><p>Ежедневно 09:00–22:00<br>по предварительной записи</p></div>
+  <div><h5>Телефоны</h5><a href="tel:+79222555948">+7 922 255-59-48</a><a href="tel:+73466565948">+7 (3466) 56-59-48</a></div>
+  <div><h5>Соцсети</h5><a href="https://wa.me/79222555948">WhatsApp</a><a href="https://vk.ru/siberianfashion">ВКонтакте</a></div>
+ </div>
+ <div class="pay"><span>Наличные</span><span>Оплата через банк</span><span>Оплата по QR-коду</span><span>Широкий лифт</span></div>
+</div></section>
+
+<footer><div class="wrap"><span>© Siberian Fashion · детская модельная школа-агентство · демо-версия сайта</span><span>Нижневартовск</span></div></footer>
+<a class="fab" href="https://wa.me/79222555948">WhatsApp</a>
+</body>
+</html>
