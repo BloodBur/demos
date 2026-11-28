@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ЧистИм126 · клининг в Пятигорске</title>
+<meta name="description" content="Уборка квартир, домов и офисов, химчистка ковров и мебели в Пятигорске. Своё оборудование и химия. 5.0 в 2ГИС.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b1f33;--ink2:#41566b;--bg:#f6fbfa;--card:#fff;--mint:#19c3a3;--mint2:#e3f7f2;--sky:#d9efff;--line:#dbe7e5;--warn:#ffcf4a}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.demo{background:var(--ink);color:#cfe;font-size:13px;text-align:center;padding:8px 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(246,251,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Unbounded;font-weight:800;font-size:19px}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--mint);display:grid;place-items:center;color:#fff;font-style:normal;font-size:18px}
+.logo b{color:var(--mint)}
+.links{display:flex;gap:26px;font-weight:600;font-size:15px;color:var(--ink2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:14px 22px;font-weight:700;font-size:15px;border:0;cursor:pointer;font-family:inherit;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.b1{background:var(--mint);color:#fff;box-shadow:0 10px 24px -10px rgba(25,195,163,.8)}
+.b2{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.hero{padding:64px 0 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.tag{display:inline-flex;gap:8px;align-items:center;background:var(--mint2);color:#0b7d68;font-weight:700;font-size:13px;padding:7px 14px;border-radius:99px}
+h1{font-family:Unbounded;font-weight:800;font-size:54px;line-height:1.05;letter-spacing:-.02em;margin:18px 0}
+h1 em{font-style:normal;color:var(--mint)}
+.lead{font-size:19px;color:var(--ink2);max-width:540px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.facts{display:flex;gap:30px;margin-top:34px;flex-wrap:wrap}
+.facts div{font-size:14px;color:var(--ink2)}.facts b{display:block;font-family:Unbounded;font-size:26px;color:var(--ink)}
+.art{position:relative;aspect-ratio:1/1;border-radius:32px;background:linear-gradient(160deg,var(--sky),var(--mint2));overflow:hidden}
+.art svg{position:absolute;inset:0;width:100%;height:100%}
+.quote{position:absolute;left:18px;right:18px;bottom:18px;background:#fff;border-radius:18px;padding:16px 18px;font-size:14px;box-shadow:0 20px 40px -20px rgba(11,31,51,.35)}
+.quote b{color:var(--mint)}
+section{padding:72px 0}
+h2{font-family:Unbounded;font-weight:700;font-size:36px;letter-spacing:-.01em;line-height:1.15}
+.sub{color:var(--ink2);margin-top:10px;max-width:620px;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.svc .ic{width:52px;height:52px;border-radius:16px;background:var(--mint2);display:grid;place-items:center;font-size:26px}
+.svc h3{font-size:19px;font-weight:800}.svc p{color:var(--ink2);font-size:15px}
+.svc ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.svc li{font-size:12.5px;font-weight:700;background:var(--bg);border:1px solid var(--line);padding:5px 10px;border-radius:99px}
+.dark{background:var(--ink);color:#fff}
+.dark .sub{color:#a9bccc}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+.st{border-top:2px solid var(--mint);padding-top:16px}
+.st b{font-family:Unbounded;color:var(--mint);font-size:14px}.st h4{font-size:18px;margin:6px 0}.st p{color:#a9bccc;font-size:14.5px}
+.calc{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;margin-top:36px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px}
+.panel label{display:block;font-weight:700;font-size:14px;margin:18px 0 8px}.panel label:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:10px 14px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit;color:var(--ink)}
+.chip.on{border-color:var(--mint);background:var(--mint2);color:#0b6b59}
+input[type=range]{width:100%;accent-color:var(--mint)}
+.area{display:flex;justify-content:space-between;font-weight:700}
+.res{background:var(--ink);color:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.res .sum{font-family:Unbounded;font-size:40px;font-weight:800}
+.res small{color:#a9bccc;font-size:13px}
+.res .btn{margin-top:auto}
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.rv{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;font-size:15px}
+.rv .s{color:#f5b400;letter-spacing:2px;margin-bottom:10px}.rv p{color:var(--ink2)}.rv span{display:block;margin-top:12px;font-size:12.5px;font-weight:700;color:#8aa}
+.pay{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.pay span{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-weight:600;font-size:14px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.form input,.form select{width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid var(--line);font:inherit;margin-bottom:12px;background:#fff}
+.note{font-size:13px;color:var(--ink2);margin-top:8px}
+.ci{display:flex;flex-direction:column;gap:16px}.ci a,.ci div{font-size:17px;font-weight:700}.ci small{display:block;font-size:13px;color:var(--ink2);font-weight:600}
+footer{padding:34px 0 90px;color:var(--ink2);font-size:14px;border-top:1px solid var(--line)}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:none}
+@media(max-width:900px){.hero,.calc,.contact{grid-template-columns:1fr}.grid,.rev{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.links{display:none}h1{font-size:38px}h2{font-size:28px}.art{max-width:440px}.fab{display:inline-flex}section{padding:56px 0}}
+@media(max-width:420px){h1{font-size:33px}.steps{grid-template-columns:1fr}.res .sum{font-size:32px}.nav .btn{padding:10px 14px;font-size:14px}}
+</style></head><body>
+<div class="demo">Демо-версия сайта, подготовлена для «ЧистИм126» · тексты и отзывы взяты из вашей карточки в 2ГИС</div>
+<header><div class="wrap nav">
+<a class="logo" href="#"><i>✦</i>ЧистИм<b>126</b></a>
+<nav class="links"><a href="#services">Услуги</a><a href="#calc">Расчёт</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a></nav>
+<a class="btn b1" href="tel:+79097706560">Позвонить</a>
+</div></header>
+
+<div class="wrap hero">
+<div>
+<span class="tag">★ 5.0 в 2ГИС · Пятигорск</span>
+<h1>Чисто так, что <em>убираем в белых носочках</em></h1>
+<p class="lead">Уборка квартир, домов и офисов, химчистка ковров и мягкой мебели. Приезжаем вовремя, со своим профессиональным оборудованием и химией.</p>
+<div class="cta"><a class="btn b1" href="#calc">Рассчитать уборку</a><a class="btn b2" href="https://wa.me/79097706560">Написать в WhatsApp</a></div>
+<div class="facts"><div><b>5.0 ★</b>оценка клиентов в 2ГИС</div><div><b>250 м²</b>помещение из отзыва клиента</div><div><b>6</b>способов оплаты</div></div>
+</div>
+<div class="art">
+<svg viewBox="0 0 400 400" aria-hidden="true">
+<circle cx="300" cy="90" r="46" fill="#fff" opacity=".7"/>
+<rect x="70" y="210" width="260" height="120" rx="18" fill="#fff"/>
+<rect x="92" y="232" width="100" height="76" rx="10" fill="#d9efff"/><rect x="208" y="232" width="100" height="76" rx="10" fill="#e3f7f2"/>
+<path d="M60 210 L200 110 L340 210" fill="none" stroke="#0b1f33" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#19c3a3"><path d="M120 90l6 16 16 6-16 6-6 16-6-16-16-6 16-6z"/><path d="M330 170l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/><path d="M70 150l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/></g>
+</svg>
+<div class="quote">«Ребята приехали на объект ровно в назначенное время… <b>квартира буквально засияла</b>»<br><small style="color:#8aa">отзыв клиента в 2ГИС</small></div>
+</div>
+</div>
+
+<section id="services"><div class="wrap">
+<h2>Что убираем</h2>
+<p class="sub">Берём объекты любого размера: от квартиры до коммерческого помещения. Всё оборудование и средства привозим с собой.</p>
+<div class="grid">
+<div class="svc"><div class="ic">🏠</div><h3>Квартиры и дома</h3><p>Генеральная и поддерживающая уборка. Проходим даже труднодоступные места, где обычно копится пыль.</p><ul><li>генеральная</li><li>окна</li><li>вытяжка</li><li>озонирование</li></ul></div>
+<div class="svc"><div class="ic">🏢</div><h3>Офисы и помещения</h3><p>Уборка коммерческих объектов. Работаем бригадой, каждый знает свой участок, поэтому быстро.</p><ul><li>офисы</li><li>большие площади</li><li>для бизнеса</li></ul></div>
+<div class="svc"><div class="ic">🛋️</div><h3>Ковры и мебель</h3><p>Химчистка ковров, ковролина и диванов. Уходят пятна и неприятные запахи.</p><ul><li>ковры</li><li>ковролин</li><li>диваны</li></ul></div>
+<div class="svc"><div class="ic">💨</div><h3>Озонирование</h3><p>Убирает запахи после ремонта, животных или долгого простоя помещения.</p><ul><li>квартиры</li><li>офисы</li></ul></div>
+<div class="svc"><div class="ic">🧰</div><h3>Прокат оборудования</h3><p>Профессиональный клининговый инвентарь в аренду, если хотите убрать сами.</p><ul><li>аренда</li><li>консультация</li></ul></div>
+<div class="svc"><div class="ic">🚐</div><h3>Выезд на дом</h3><p>Приезжаем к вам в удобное время. Своё оборудование и профессиональная химия уже с нами.</p><ul><li>Пятигорск</li><li>точно ко времени</li></ul></div>
+</div></div></section>
+
+<section class="dark"><div class="wrap">
+<h2>Как проходит уборка</h2>
+<p class="sub">Четыре простых шага, без сюрпризов в конце.</p>
+<div class="steps">
+<div class="st"><b>01</b><h4>Заявка</h4><p>Звоните, пишете в WhatsApp или оставляете заявку на сайте.</p></div>
+<div class="st"><b>02</b><h4>Точная цена</h4><p>Уточняем площадь и задачи и сразу называем стоимость.</p></div>
+<div class="st"><b>03</b><h4>Бригада вовремя</h4><p>Приезжаем к назначенному времени, полностью экипированные.</p></div>
+<div class="st"><b>04</b><h4>Приёмка</h4><p>Вы проверяете результат и платите удобным способом.</p></div>
+</div></div></section>
+
+<section id="calc"><div class="wrap">
+<h2>Рассчитайте уборку за минуту</h2>
+<p class="sub">Выберите тип уборки и площадь. Расчёт сразу уйдёт к нам, и мы подтвердим точную цену.</p>
+<div class="calc">
+<div class="panel">
+<label>Тип объекта</label><div class="chips" data-g="obj"><button class="chip on" data-k="1">Квартира</button><button class="chip" data-k="1.1">Дом</button><button class="chip" data-k="0.9">Офис</button></div>
+<label>Вид уборки</label><div class="chips" data-g="type"><button class="chip" data-k="60">Поддерживающая</button><button class="chip on" data-k="120">Генеральная</button><button class="chip" data-k="160">После ремонта</button></div>
+<label>Площадь</label><div class="area"><span>м²</span><span id="av">60 м²</span></div><input type="range" id="ar" min="20" max="300" step="5" value="60">
+<label>Дополнительно</label><div class="chips" data-g="ext" data-multi><button class="chip" data-k="1500">Окна</button><button class="chip" data-k="2000">Химчистка дивана</button><button class="chip" data-k="1500">Озонирование</button></div>
+</div>
+<div class="res">
+<small>Примерная стоимость</small>
+<div class="sum" id="sum">7 200 ₽</div>
+<small>В демо-версии стоят условные расценки за м². На сайте будут ваши настоящие цены, их можно менять в любой момент.</small>
+<a class="btn b1" href="#contact">Отправить расчёт</a>
+</div>
+</div></div></section>
+
+<section id="reviews" style="background:#fff"><div class="wrap">
+<h2>Что говорят клиенты</h2>
+<p class="sub">Настоящие отзывы из 2ГИС, средняя оценка 5.0.</p>
+<div class="rev">
+<div class="rv"><div class="s">★★★★★</div><p>«Шикарно почистили мой ковролин, который испортила предыдущая компания… и освежили, и почистили каждый сантиметр, и плюс диван!»</p><span>2ГИС</span></div>
+<div class="rv"><div class="s">★★★★★</div><p>«Обратился с просьбой убрать помещение в 250 квадратных метров. Мне всё очень понравилось по цене… убирают помещение на высшем уровне»</p><span>2ГИС</span></div>
+<div class="rv"><div class="s">★★★★★</div><p>«Бригада прибыла полностью экипированной, со своим профессиональным оборудованием и моющими средствами… отмыли окна и вытяжку до идеала»</p><span>2ГИС</span></div>
+<div class="rv"><div class="s">★★★★★</div><p>«Отдавали ковры на чистку, результатом остались очень довольны! Ушли пятна и неприятные запахи»</p><span>2ГИС</span></div>
+<div class="rv"><div class="s">★★★★★</div><p>«Весь спектр услуг, включая озонирование! Буду обращаться ещё!»</p><span>2ГИС</span></div>
+<div class="rv"><div class="s">★★★★★</div><p>«Выполнили обещанное и даже оставили маленький презент. Спасибо, буду знать, куда обращаться»</p><span>2ГИС</span></div>
+</div>
+<h3 style="margin-top:44px;font-size:20px">Оплата удобным способом</h3>
+<div class="pay"><span>💵 Наличные</span><span>💳 Перевод с карты</span><span>🏦 Через банк</span><span>📱 QR-код</span><span>👛 Эл. кошелёк</span><span>📲 Через приложение</span></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Оставьте заявку</h2>
+<p class="sub">Перезвоним, уточним детали и назовём точную стоимость.</p>
+<div class="contact">
+<form class="panel form" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Это демо-версия: на рабочем сайте заявка сразу придёт вам в Telegram.'">
+<input placeholder="Ваше имя" required><input placeholder="Телефон" type="tel" required>
+<select><option>Уборка квартиры или дома</option><option>Уборка офиса</option><option>Химчистка ковров и мебели</option><option>Озонирование</option><option>Прокат оборудования</option></select>
+<button class="btn b1" style="width:100%">Отправить заявку</button><div class="note">Нажимая кнопку, вы соглашаетесь на обработку данных.</div>
+</form>
+<div class="panel ci">
+<a href="tel:+79097706560"><small>Телефон</small>+7 909 770-65-60</a>
+<a href="https://wa.me/79097706560"><small>WhatsApp</small>Написать в WhatsApp</a>
+<div><small>Адрес</small>Пятигорск, Февральская улица, 89</div>
+<div><small>Работаем</small>С выездом к вам на объект</div>
+</div>
+</div></div></section>
+<footer><div class="wrap">© ЧистИм126 · клининговая служба, Пятигорск</div></footer>
+<a class="btn b1 fab" href="tel:+79097706560">📞 Позвонить</a>
+<script>
+const st={obj:1,type:120,ext:new Set()};
+document.querySelectorAll('.chips').forEach(g=>g.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;const k=g.dataset.g;
+if(g.hasAttribute('data-multi')){c.classList.toggle('on');c.classList.contains('on')?st.ext.add(c):st.ext.delete(c)}else{g.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');st[k]=+c.dataset.k}calc()}));
+const ar=document.getElementById('ar');ar.oninput=calc;
+function calc(){const a=+ar.value;document.getElementById('av').textContent=a+' м²';let s=a*st.type*st.obj;st.ext.forEach(c=>s+=+c.dataset.k);s=Math.round(s/100)*100;document.getElementById('sum').textContent=s.toLocaleString('ru-RU')+' ₽'}
+calc();
+</script>
+</body></html>
